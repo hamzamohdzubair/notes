@@ -1,7 +1,5 @@
 # topic tree
 
-- bookmarks
-  - learn
 - topics
   - islam
     - quran
