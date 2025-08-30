@@ -1,7 +1,13 @@
 # topic tree
 
-- bookmarks
+- src
   - learn
+    - ytchannels
+      - [stanford](https://www.youtube.com/@stanfordonline/playlists)
+      - [mit](https://www.youtube.com/@mitocw/playlists)
+      - [yale](https://www.youtube.com/@YaleCourses/playlists)
+      - [nptel](https://www.youtube.com/@iit/playlists)
+      - [brightsideofmath](https://www.youtube.com/@brightsideofmaths)
 - topics
   - islam
     - quran
@@ -385,12 +391,19 @@
         - notations (sets, functions)
         - relationships
         - functions
+      - measure theory
+        - src
+          - [brightsideofmath](https://www.youtube.com/playlist?list=PLBh2i93oe2quIJS-j1NpbzEvQCmN00F5o)
       - linear algebra
+        - src
+          - [brightsideofmath](https://www.youtube.com/watch?v=SrhtsGd0y1s&list=PLBh2i93oe2qvHhhyzyoga6PR5LPoJEXwy)
         - building blocks
           - objects
             - scalars
             - vectors
             - matrices
+              - src
+                - [nptel/matrix-theory](https://www.youtube.com/playlist?list=PLbMVogVj5nJQnzk6Sn9o6RTpu4Evx0LOT)
             - tensors
             - vector spaces
           - operations
@@ -432,6 +445,8 @@
               - Hermitian Matrix
         - theory
           - matrix factorization
+            - src
+              - [brightsideofmath](https://www.youtube.com/playlist?list=PLBh2i93oe2quJ__clFXblfzPHWd-AiwRF)
             - eigendecomposition
               - diagonalization
               - spectral decomposition
@@ -452,8 +467,11 @@
           - systems of linear equations
           - dimensionality reduction
             - PCA
+      - abstract linear algebra
+        - src
+          - [brightsideofmath](https://www.youtube.com/watch?v=DY0pADcC5-w&list=PLBh2i93oe2qsUOyVLKjcFSk517A_x3jbT)
       - optimization
-        - links
+        - src
           - [brownlee/optimization](https://drive.google.com/file/d/1PMCpMJOyJABUbM-vsQdstKvu49xVkCDD/view?usp=drive_link)
         - types of types
           - solution method
@@ -577,23 +595,43 @@
           - transportation problem
           - traveling salesman problem
       - group-theory
+      - real-analysis
       - prob-stats
-        - links
+        - src
           - [stanford/cs109](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg)
         - counting-theory
-          - links
+          - src
             - [stanford/chrispiech/pdf](https://chrispiech.github.io/probabilityForComputerScientists/en/part1/combinatorics/)
         - prob-theory
           - Law of total probabilty / marginalization
           - Law of large numbers
           - LOTUS
+        - distribution-theory
+          - random variables
+          - bernoulli
+          - binomial
+          - poisson
+          - geometric
+          - exponential
+          - normal
         - inference-theory
           - conditional probability
           - bayes theorem
           - bayesian network
           - rejection sampling
+          - laplace smoothing
           - mcmc
-        - distribution-theory
+            - src
+              - [veritasium/history](https://www.youtube.com/watch?v=KZeIEiBrT_w&t=277s)
+        - uncertainty theory
+          - beta
+            - src
+              - [3blue1brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q&list=PLZHQObOWTQDOjmo3Y6ADm0ScWAlEXf-fp)
+            - laplace smoothing / laplace prior / laplace's rule of succession
+
+          - MAB
+          - upper confidence bound
+          - thomson sampling
         - stats
           - descriptive stats
           - covariance
@@ -963,7 +1001,7 @@
               - git cat-file -p hash
             - lazygit
       - dsml
-        - links
+        - src
           - [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
         - tools
           - tableau
@@ -1220,6 +1258,7 @@
               - minkowski
               - john v neuman
               - andrey markov
+              - thomas bayes
             - physics
             - stanley whittingham
             - fruigi galvani
@@ -1268,6 +1307,7 @@
     - engineering
     - medicine
     - biz
+      - marketing
       - accounting
         - accounting equation
         - when does owner's equity increase / decrease
