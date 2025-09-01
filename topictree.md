@@ -1,13 +1,11 @@
 # topic tree
 
-- src
-  - learn
-    - ytchannels
-      - [stanford](https://www.youtube.com/@stanfordonline/playlists)
-      - [mit](https://www.youtube.com/@mitocw/playlists)
-      - [yale](https://www.youtube.com/@YaleCourses/playlists)
-      - [nptel](https://www.youtube.com/@iit/playlists)
-      - [brightsideofmath](https://www.youtube.com/@brightsideofmaths)
+- apps
+  - lazyvim
+  - qutebrowser
+  - zathura / sioyek
+  - aerospace
+  - ghostty
 - topics
   - islam
     - quran
@@ -599,6 +597,7 @@
       - prob-stats
         - src
           - [stanford/cs109](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg)
+          - [demos](https://onlinestatbook.com/)
         - counting-theory
           - src
             - [stanford/chrispiech/pdf](https://chrispiech.github.io/probabilityForComputerScientists/en/part1/combinatorics/)
@@ -617,6 +616,8 @@
         - inference-theory
           - conditional probability
           - bayes theorem
+            - src
+              - [veritasium/bayesian-trap](https://www.youtube.com/watch?v=R13BD8qKeTg)
           - bayesian network
           - rejection sampling
           - laplace smoothing
@@ -628,25 +629,32 @@
             - src
               - [3blue1brown](https://www.youtube.com/watch?v=8idr1WZ1A7Q&list=PLZHQObOWTQDOjmo3Y6ADm0ScWAlEXf-fp)
             - laplace smoothing / laplace prior / laplace's rule of succession
-
           - MAB
           - upper confidence bound
           - thomson sampling
         - stats
+          - src
+            - [CartoonGuideToStatistics-Gonick](/Users/hamzazubair/gdrive/archive/books/cs-math-dsml/CartoonGuideToStatistics-Gonick.pdf)
           - descriptive stats
           - covariance
           - correlation
             - pearson
             - spearman
-          - scipy
-        - moments
-        - distributions
-        - hypothesis testing
+          - CLT
+        - testing theory
+          - src
+            - [verynormal](https://www.youtube.com/playlist?list=PLEDdkzD9hUd7JJ8LH7wp8JOw5CMIb-_Do)
+          - resampling
+            - bootstrapping
+            - jackknifing
+            - cross validation
+            - permutation test
           - z-test
           - t-test
           - proportion-test
           - chi-squared
           - non-parametric
+        - moments
         - confusion matrix
         - regression models
           - linear regression
@@ -656,6 +664,8 @@
           - proportional hazards
         - design of experiments
         - info theory
+          - src
+            - [artemkirsanov](https://www.youtube.com/watch?v=KHVR587oW8I)
           - entropy
           - cross-entropy
         - markov chains
@@ -988,21 +998,104 @@
               - tree
                 - cartesian tree sorting
             -
-        - ops
-          - git
-            - config
-            - commands
-              - git --version
-              - git init
-              - git status
-              - git add
-              - git commit -m ""
-              - git log
-              - git cat-file -p hash
-            - lazygit
+      - ops
+        - git
+          - config
+          - commands
+            - git --version
+            - git init
+            - git status
+            - git add
+            - git commit -m ""
+            - git log
+            - git cat-file -p hash
+          - lazygit
       - dsml
         - src
           - [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
+          - scaler
+            - modules
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8: {linear algebra, optimization}
+                - main (Aditya Jain): {xoooo|ooooo|}
+                  - 1
+                    - pattern recognition salary example
+                    - y = mx + c
+                    - classification
+                    - supervised
+                    - unsupervised
+                    - features vs target / dependent vs independent
+                    - best classifier
+                    - line is always not sufficient, sometimes we need a curve
+                    - overall ML process / steps
+                    - BREAK
+                    - coordinate geometry basics
+                    - y = mx + c
+                    - generalized equation of line
+                    - ML form of generalized equation
+                    - multi-class classification
+                    - slopes of parallel lines
+                    - slopes of perpendicular lines
+                    - nD space -> (n-1)D-hyperplane
+                    - desmos
+                      - y=mx+c
+                      - generalized equation of line
+                      - perpendicular lines
+                    - jupyter
+                      - manually change m and c to find the best line
+              - 9: {linear regression, logistic regression}
+                - main (Aditya Jain): {xoooo|ooooo|o}
+                  - 1
+                    - types of plots depending on data types
+                    - definitions of ML
+                      - Arthur Samuel
+                      - Tom Mitchell
+                    - BREAK
+                    - comparing ML to a child learning
+                    - examples of applications of ML
+                      - google news clustering
+                      - magicbricks
+                      - RL
+                    - classification of ML
+                      - based on tasks
+                        - classification
+                        - regression
+                        - clustering
+                        - recommendation
+                        - forecasting
+                      - based on learning
+                        - supervised
+                        - unsupervised
+                        - reinforcement
+                  - 2
+                    - cars24 introduction
+                    - jupyter
+                      - cars24 data exploration
+                      - encoding
+                        - OHE
+                          - curse of dimensionality
+                        - label ecnoding
+                        - target encoding
+                      - scaling
+                        - min max scaling
+                      - train-test split
+                      - linear regression
+                        - univariate linear regression
+                          - using sklearn
+                        - multivariate linear regression
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15: {neural networks}
+              - 16: {CV}
+              - 17: {NLP}
         - tools
           - tableau
           - excel
@@ -1018,58 +1111,6 @@
         - Supervised
           - Classification/Regression
             - algos
-              - table
-
-                - Legend
-
-                    P/NP = Parametric / Non-parametric • D/G = Discriminative / Generative • Sup = S (sup), U (unsup), SS (semi-sup), SL (self-sup)  
-                    Task = Clf (classification), Reg (regression), Both, Clus (clustering), DR (dim-red), Dens (density), Seq (seq/struct), Anom (anomaly)  
-                    Dom = Tab (tabular), Txt, Img, Time, Graph • Lin = linear decision fn (Y/N/Loc) • Prob = probabilistic (Y/N/~)  
-                    Lazy = instance-based • Cvx = convex objective (Y/N/?) • Kern = kernelizable/uses kernel (Y/N) • Scale = needs scaling (Y/N/~)  
-                    Interp = interpretability H/M/L • Robust = outlier/shift robust H/M/L • Online = supports incremental (Y/N/~)  
-                    MC = multiclass: Native/OvR/OvO/– • Miss = native missing-value handling (Y/N/~) • Cal = calibrated probs OOTB (Y/N/~)  
-                    FI = feature importance: Y/Perm/SHAP/No • Reg = common regularization • Assump (short): Lin (linearity), Margin, Indep, Gauss, Hm (homosc.), EqualCov,  
-                    Smooth, Manifold, Markov, Station, Axis, Add (additive), Local (local smoothness), Sph (spherical), Prior  
-                    Comp = rough fit/pred cost (n=#rows, d=#feat, k=#clus, m=#comps, T=#trees, D=depth, s=#SV, E=epochs, P=#params, S=#states, L=seq len)  
-
-                - Algorithms (compact overview)
-
-                    | Alg | P/NP | D/G | Sup | Task | Dom | Lin | Prob | Lazy | Cvx | Kern | Scale | Interp | Robust | Online | MC | Miss | Cal | FI | Reg | Assump | Comp (fit/pred) | Notes |
-                    |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-                    | OLS (LinReg) | P | D | S | Reg | Tab | Y | Y | N | Y | N | ~ | H | L | ~ | – | N | – | Coef | – | Lin, Gauss, Hm | O(nd) / O(d) | baseline |
-                    | Ridge | P | D | S | Reg | Tab | Y | Y | N | Y | N | ~ | H | M | ~ | – | N | – | Coef | L2 | Lin, Gauss | O(nd) / O(d) | shrinks coef |
-                    | Lasso | P | D | S | Reg | Tab | Y | Y | N | Y | N | ~ | H | M | ~ | – | N | – | Coef | L1 | Lin, Gauss | O(nd) / O(d) | sparse |
-                    | Logistic Reg | P | D | S | Clf | Tab/Txt | Y | Y | N | Y | ~ | Y | H | M | ~ | Native | N | Y | Coef | L2/L1 | Lin, Margin | O(nd)/O(d) | calibrated baseline |
-                    | LDA | P | G | S | Clf | Tab | Y | Y | N | Y | N | Y | M | L | N | Native | N | Y | Coef | – | Gauss, EqualCov | O(nd)/O(d) | closed-form |
-                    | QDA | P | G | S | Clf | Tab | N | Y | N | Y | N | Y | M | L | N | Native | N | Y | Coef | – | Gauss | O(nd²)/O(d²) | quad boundary |
-                    | NB (Gaussian) | P | G | S | Clf | Tab | ~ | Y | N | – | N | ~ | M | L | Y | Native | N | N | – | Prior | Indep, Gauss | O(nd)/O(d) | very fast |
-                    | NB (Multi/Bern) | P | G | S | Clf | Txt | ~ | Y | N | – | N | N | M | L | Y | Native | N | N | – | Prior | Indep | O(nd)/O(d) | BoW text |
-                    | k-NN | NP | D | S | Both | Tab/Img/Txt | N | N | Y | – | N | Y | L | L | N | Native | N | – | No | – | Local | fit O(1)/pred O(nd) | memory-based |
-                    | Perceptron | P | D | S | Clf | Tab/Txt | Y | N | N | ? | N | Y | M | L | Y | OvR | N | N | Coef | L2 | Sep, Margin | O(nd)/O(d) | linear, online |
-                    | SVM (linear) | P | D | S | Both | Tab/Txt | Y | N | N | Y | N | Y | M | M | ~ | OvR/OvO | N | Needs | Coef | L2 | Margin | ~O(n²d)/O(d) | margin-based |
-                    | SVM (RBF) | NP | D | S | Both | Tab | N | N | N | Y | Y | Y | L | M | N | OvO | N | Needs | No | C | Margin, Smooth | O(n²–n³)/O(s) | uses SVs |
-                    | Decision Tree | NP | D | S | Both | Tab | Loc | ~ | N | N | N | N | H | M | N | Native | ~ | N | Y | Depth/Prune | Axis | O(nd log n)/O(D) | rules |
-                    | Random Forest | NP | D | S | Both | Tab | N | ~ | N | N | N | N | M | H | ~ | Native | ~ | ~ | Y/Perm | Depth | Axis, Bagging | O(T n log n)/O(TD) | OOB, robust |
-                    | GBDT (XGB/LGBM) | NP | D | S | Both | Tab | N | ~ | N | N | N | N | M | M | ~ | Native | Y | ~ | Y/SHAP | Shrink/Depth | Add | O(T n log n)/O(TD) | SOTA tabular |
-                    | GP (GPR/GPC) | NP | G | S | Both | Tab/Time | N | Y | N | Y | Y | Y | M | M | N | Native | N | Y | No | Priors | Smooth | O(n³)/O(n) | uncertainty |
-                    | k-means | P | – | U | Clus | Tab/Img | N | N | N | N | N | Y | M | L | Y | – | N | – | No | – | Sph, LinSep | O(nkdi)/O(kd) | centroid, fast |
-                    | GMM | P | G | U | Clus/Dens | Tab | N | Y | N | N | N | Y | M | L | ~ | – | N | – | No | Priors | Gauss mix | O(nkdi)/O(kd) | soft clusters |
-                    | DBSCAN | NP | – | U | Clus/Anom | Tab | N | N | N | N | N | Y | L | M | N | – | N | – | No | – | Density | O(n log n)/O(log n) | noise aware |
-                    | PCA | P | – | U | DR | Tab/Img | Y | N | N | Y | N | Y | M | L | ~ | – | N | – | Load | – | VarMax | O(nd²+d³)/O(md) | linear DR |
-                    | t-SNE | NP | – | U | DR/Vis | Tab/Img/Txt | N | ~ | N | N | N | Y | L | M | N | – | N | – | No | – | Manifold | O(n²)/– | visualization |
-                    | UMAP | NP | – | U | DR/Vis | Tab/Img/Txt | N | ~ | N | N | N | Y | L | M | N | – | N | – | No | – | Manifold | ~O(n log n)/– | faster than t-SNE |
-                    | HMM | P | G | S/U | Seq/Clf | Time/Txt | N | Y | N | N | N | Y | M | L | ~ | Native | N | – | No | Priors | Markov, Station | O(L S²)/O(L S²) | temporal gen |
-                    | CRF (lin-chain) | P | D | S | Seq | Txt/Time | Y | Y | N | Y | N | Y | M | M | ~ | Native | N | Y | Weights | L2/L1 | Markov | O(it·L S²)/O(L S²) | structured pred |
-                    | MLP (feed-fwd NN) | P | D | S | Both | Tab/Txt/Img | N | ~ | N | N | N | Y | L | L | Y | Native | N | N | SHAP/No | Drop/L2/EStop | – | O(E·P)/O(P) | flexible |
-                    | CNN | P | D | S | Both | Img/Time | N | ~ | N | N | N | ~ | L | L | Y | Native | N | N | Saliency | Drop/Aug | Locality | heavy/– | conv features |
-                    | RNN/LSTM/GRU | P | D | S | Both/Seq | Time/Txt | N | ~ | N | N | N | Y | L | L | Y | Native | N | N | No | Drop | Markovish | O(E·P)/O(P) | sequences |
-                    | Transformer | P | D | S/SL | Both/Seq | Txt/Img/Time | N | ~ | N | N | N | Y | L | L | Y | Native | N | N | No | Drop | – | O(E·n²·d)/O(n²·d) | attn-based |
-                    | GNN (GCN/GAT) | P | D | S | Both | Graph | N | ~ | N | N | N | Y | L | M | ~ | Native | N | N | No | Drop | Smooth | O(E·P)/O(P) | graph reps |
-                    | Autoencoder (AE) | P | – | U/SL | DR/Anom | Txt/Img/Tab | N | N | N | N | N | Y | L | M | Y | – | N | – | No | Drop | Manifold | O(E·P)/O(P) | reps |
-                    | Isolation Forest | NP | – | U | Anom | Tab | N | N | N | N | N | N | M | H | ~ | – | ~ | – | Y/Perm | Depth | Axis, Random | O(T n log n)/O(TD) | isolates outliers |
-                    | One-Class SVM | NP | D | U | Anom | Tab | N | N | N | Y | Y | Y | L | M | N | – | N | – | No | ν | Margin, Smooth | O(n²–n³)/O(s) | boundary on normal |
-                    | ARIMA | P | G | S | Reg/Fore | Time | Y | Y | N | Y | N | Y | M | L | ~ | – | N | – | – | – | Station | O(n)/O(1) | classical TS |
-                    | Kalman Filter | P | G | S/U | Seq/Fore | Time | Y | Y | N | Y | N | Y | M | M | Y | – | N | – | – | Priors | Gauss, Lin | O(n d³)/O(d²) | state-space |
               - list
                 - regression
                   - linear regression
@@ -1157,6 +1198,9 @@
     - case studies
       - entity
         - areas
+          - palestine
+            - src
+              - [movie](https://www.youtube.com/watch?v=WJ5c1qUtXKk)
           - bhutan
           - mauritius
             - islands
@@ -1235,6 +1279,9 @@
               - barbahari
                 - Sharh al sunna
               - maulana wahiduddin khan
+              - mustafa akyol
+                - src
+                  - [documentary](https://www.youtube.com/watch?v=uWODN6wI5xo&t=1s)
           - muslim
             - saddam hussein
             - salahuddin ayyubi
@@ -1259,6 +1306,7 @@
               - john v neuman
               - andrey markov
               - thomas bayes
+              - Bradley Efron
             - physics
             - stanley whittingham
             - fruigi galvani
