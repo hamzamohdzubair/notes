@@ -221,6 +221,9 @@
           - glow stick
         - Killer
           - Parachlorometaxylenol/chloroxylenol
+          - glyphosate
+            - src
+              - [veritasium](https://www.youtube.com/watch?v=CxVXvFOPIyQ)
         - Growers
         - Burners
         - Builders
@@ -294,6 +297,7 @@
       - biochemistry
       - microbiology
       - botany
+        - shikimate pathway
       - zoology
         - taxonomy
           - animalia
@@ -1013,9 +1017,9 @@
       - dsml
         - src
           - [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
-          - scaler
+          - [scaler](https://www.scaler.com)
             - modules
-              - 2
+              - 2: {numpy, pandas}
               - 3
               - 4
               - 5
@@ -1049,7 +1053,7 @@
                     - jupyter
                       - manually change m and c to find the best line
               - 9: {linear regression, logistic regression}
-                - main (Aditya Jain): {xoooo|ooooo|o}
+                - main (Aditya Jain): {xxxoo|ooooo|o}
                   - 1
                     - types of plots depending on data types
                     - definitions of ML
@@ -1087,7 +1091,32 @@
                       - linear regression
                         - univariate linear regression
                           - using sklearn
-                        - multivariate linear regression
+                          - model.fit
+                          - model.coef_
+                          - model.intercept_
+                          - model.predict
+                          - model.score
+                          - error
+                            - MAE
+                            - MSE
+                            - R2 score / R-squared / coeff of determination
+                  - 3
+                    - R2 score
+                    - min-max scaling
+                      - .fit_transform on train
+                      - .transform on test
+                    - model interpretability
+                      - coeffecient or weight
+                        - negative, zero, positive
+                          - direction of impact
+                        - value
+                          - feature importance
+                    - BREAK
+                    - Gradient Descent
+                      - steps
+                      - derivative of loss
+                    - Multivariate Linear Regression with gradient descent from scratch
+                  - 4
               - 10
               - 11
               - 12
@@ -1321,8 +1350,12 @@
             - thomas piketty
         - product
           - dettol
+          - agent orange
         - company
           - blackrock
+          - monsanto
+            - src
+              - [veritasium](https://www.youtube.com/watch?v=CxVXvFOPIyQ)
         - idea
           - renaissance philosophy
           - presentism
