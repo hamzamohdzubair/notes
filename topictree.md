@@ -16,6 +16,10 @@
         - 1
         - 2
         - 3
+          - props
+            - name: aaleimran
+            - ayahs: 200
+            - rukus: 20
         - 4
         - 5
         - 6
@@ -444,6 +448,11 @@
               - sheer matrix
               - orthogonal matrix
               - projection matrix
+                - src
+                  - [sam-levey](https://www.youtube.com/watch?v=Yc6q2w8Nt38&list=PLmtbsGjqSdcaHDCHBZNywA6KOF2JawtxN&index=1)
+                - properties
+                  - idempotent
+                  - symmetric
               - Hermitian Matrix
         - theory
           - matrix factorization
@@ -472,6 +481,10 @@
       - abstract linear algebra
         - src
           - [brightsideofmath](https://www.youtube.com/watch?v=DY0pADcC5-w&list=PLBh2i93oe2qsUOyVLKjcFSk517A_x3jbT)
+        - subspace
+          - src
+            - [perplexity](https://www.perplexity.ai/search/34f49bc3-cd57-40d3-a3b3-5ca996be321e)
+          - formal definition
       - optimization
         - src
           - [brownlee/optimization](https://drive.google.com/file/d/1PMCpMJOyJABUbM-vsQdstKvu49xVkCDD/view?usp=drive_link)
@@ -601,6 +614,9 @@
       - prob-stats
         - src
           - [stanford/cs109](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg)
+            - |ooooo|ooooo|ooooo|ooooo|ooooo|oooo |
+              - 20 | Algorithmic Analysis
+                - Law of Unconscious Statistician (LOTUS)
           - [demos](https://onlinestatbook.com/)
         - counting-theory
           - src
@@ -639,6 +655,7 @@
         - stats
           - src
             - [CartoonGuideToStatistics-Gonick](/Users/hamzazubair/gdrive/archive/books/cs-math-dsml/CartoonGuideToStatistics-Gonick.pdf)
+            - *StatsCartoonBook*
           - descriptive stats
           - covariance
           - correlation
@@ -797,6 +814,7 @@
                   - cli
                     - grep
                     - find
+                    - ffmpeg
                   - tui
                     - vim
           - sql
@@ -825,6 +843,8 @@
                 - savepoint
                 - set transaction
           - python
+            - src
+              - [documentary](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
             - what is python
             - installation
             - programming elements
@@ -973,6 +993,9 @@
                 - recursive bubble sort
               - bucket
               - counting
+                - src
+                  - [animation](https://www.youtube.com/watch?v=EItdcGhSLf4)
+                - stable
               - cycle
               - flash
               - gnome
@@ -1002,6 +1025,9 @@
               - tree
                 - cartesian tree sorting
             -
+      - design
+        - src
+          - [book/kleppmann](/Users/hamzazubair/gdrive/archive/books/cs-math-dsml/DesigningDataIntensiveApplications-Kleppmann.pdf)
       - ops
         - git
           - config
@@ -1019,14 +1045,50 @@
           - [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
           - [scaler](https://www.scaler.com)
             - modules
-              - 2: {numpy, pandas}
-              - 3
-              - 4
-              - 5
-              - 6
-              - 7
-              - 8: {linear algebra, optimization}
-                - main (Aditya Jain): {xoooo|ooooo|}
+              - N:  |NOTES|GR|EXAM|ASMT|ATTN|RSRCH|
+              - 2:  | 1/16|B+| 80%|100%| 98%|oo   | {numpy, pandas}
+                - main (Nikhil Sanghi): |xoooo|ooooo|ooooo|
+                  - 1
+                    - pros and cons of numpy
+                      - element-wise operation
+                      - comparing the times of square by list comprehension and square by element wise operation
+                      - heterogenous array not possible
+                      - how numpy stores internally -> as contiguous memory
+                    - arr.dtype
+                    - type conversions in numpy to keep the array homogenous: boolean -> int -> float -> string
+                    - np.array(list, dtype="float")
+                    - python range vs numpy arange
+              - 3:  | 1/10|A+|100%|100%| 80%|oo   | {probability, combinatorics, stats, distributions, CLT}
+                - Shivam Yadav (main): |ooooo|ooooo|
+                - Ajay Shenoy: |xoooo|ooooo|
+                  - 1
+                    - importance of probability
+                      - mention in JD
+                      - amazon button color example -> conditional probability:  purchase | color = orange
+                      - next word prediction as conditional probability
+                    - terminology
+                      - sample space
+                      - experiment
+                      - outcome
+                      - event
+                    - set operations
+                      - intersection
+                      - union
+                      - complement
+                    - mutually exclusive
+                    - collectively exhaustive
+                    - BREAK
+                    - sachin-ODI (sachin scoring a century good for india or bad for india)
+                      - value counts of two columns together -> joint-frequency table / 2-way frequency table
+                        - .unstack()
+                      - pd.crosstab(index, columns, margin)
+                      - conditional probabilities from joint-frequency table
+              - 4:  |  /  |A | 90%|100%| 86%|oo   | {Hypothesis Testing, Ztest, T-Test, Chisquared, ANOVA, correlation test, Feature Engineering}
+              - 5:  |  /  |A+|100%|100%| 65%|oo   | {Product Analytics: Product Metrics, RCA, CRM Analytics, A/B Testing, Guess Estimate, Flight Overbooking}
+              - 6:  |  /  |  |    |  0%|  0%|ooo  | {Common Core Tools: SQL + Excel + Tableau}
+              - 7:  |  /  |  |    | 86%| 80%|oo   | {OOPS, FP, Exception Handling, Modules, Files}
+              - 8:  | 1/10|B | 77%|100%| 89%|oo   | {linear algebra, optimization}
+                - Aditya Jain (main): |xoooo|ooooo|
                   - 1
                     - pattern recognition salary example
                     - y = mx + c
@@ -1052,9 +1114,9 @@
                       - perpendicular lines
                     - jupyter
                       - manually change m and c to find the best line
-              - 9: {linear regression, logistic regression}
-                - main (Aditya Jain): {xxxoo|ooooo|o}
-                  - 1
+              - 9:  | 3/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
+                - Aditya Jain (main): |xxxoo|ooooo|o
+                  - 1 | Intro to mL
                     - types of plots depending on data types
                     - definitions of ML
                       - Arthur Samuel
@@ -1076,7 +1138,7 @@
                         - supervised
                         - unsupervised
                         - reinforcement
-                  - 2
+                  - 2 | Linear Regression 1
                     - cars24 introduction
                     - jupyter
                       - cars24 data exploration
@@ -1100,8 +1162,9 @@
                             - MAE
                             - MSE
                             - R2 score / R-squared / coeff of determination
-                  - 3
+                  - 3 | Linear Regression 2
                     - R2 score
+                      - theoretical range and practical range
                     - min-max scaling
                       - .fit_transform on train
                       - .transform on test
@@ -1116,18 +1179,171 @@
                       - steps
                       - derivative of loss
                     - Multivariate Linear Regression with gradient descent from scratch
-                  - 4
-              - 10
-              - 11
-              - 12
-              - 13
-              - 14
-              - 15: {neural networks}
-              - 16: {CV}
-              - 17: {NLP}
+                  - 4 | Linear Regression 3
+                    - Convergence of gradient descent with scaled vs non-scaled features
+                    - Adjusted R2 score
+                    - calculating R2 score using sklearn
+                    - BREAK
+              - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
+                - Rohit (main): |xoooo|ooooo|oo   |
+                  - 1
+                    - SMOTE
+                      - oversampling
+                      - undersampling
+                      - linear interpolation
+                    - KNN
+                      - Fake blinkit casestudy
+                      - reducing dimensions using PCA to plot 2d plot
+                      - why use KNN when we have logreg
+                        - log reg by default does not do multiclass and non-linear classification
+                      - Intuition
+                    - BREAK
+                    - non-parametricity
+                    - blinkit casestudy
+                      - KNN from scratch
+                        - implement SMOTE
+                        - standard scaling after train test split to avoid leakage
+                        - knn algorithm
+                      - confusion matrix using sklearn
+                      - classification report using sklearn
+                    - assumptions of KNN
+                      - Neighborhood is homogenous
+                  - 2
+                  - 3
+              - 11: |  /  |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
+              - 12: |  /  |  |    | 22%|  9%|ooo  | {Time Series, Recommender Systems}
+              - 13: | 1/12|B | 77%|100%|100%|oooo | {MLops: Git, Streamlit, Flask, Docker, AWS, CI/CD, MLFlow, System Design, AWS SageMaker, Apache Spark}
+                - Rohit (main): |xoooo|ooooo|oo   |
+                  - 1
+                    - mlops vs devops
+                      - what is devops (horrible explanation)
+                    - git
+                      - why we require version control
+                      - terminlolgy
+                        - repository
+                        - commit
+                    - distributed VCS vs centralized VCS
+                    - github desktop
+                      - commit
+                      - checkout
+                      - push
+                      - pull
+                    - BREAK
+                    - terminology
+                      - repository: tracked folder
+                        - local
+                        - remote
+                      - commit
+                      - push
+                      - pull
+                      - clone
+                    - how to create a repository
+                    - always pull before you push
+                    - branches
+                    - merging
+                      - pull request
+                      - merge conflicts
+                    - publish branch
+                    - forking
+              - 14: |-----|--|----|----|----|-----| {Portfolio Project}
+              - 15: | 1/12|F | 50%| 46%| 92%|ooooo| {neural networks}
+                - Satya Patnaik (main): |xoooo|ooooo|oo   |
+                  - 1
+                    - spiral data
+                      - properties of spiral dataset: multiclass + non-linear
+                      - ML algorithms and how they would handle multiclass + non-linear + inference time + automatic feature engineering + parallelizable + unstructured data
+                        - logreg
+                        - KNN
+                        - DT
+                        - SVM
+                      - evolve logreg to neural network
+                      - tensorflow dashboard demo
+                    - applications of Neural Networks
+                      - compression / encryption -> autoencoders
+                      - magic eraser in google photos / image segmentation
+                      - autocomplete
+                    - BREAK
+                    - inspriation from biological neuron
+                    - mathematical representation of neuron
+                    - logreg neuron
+                    - SVM neuron
+                    - perceptron neuron
+                    - Brief history of neural networks in one chart -> 2 AI winters
+                    - Performance of classical Algorithms vs Small NN, Medium NN, Deep NN with increasing data chart
+                    - Meaning of Deep NN
+              - 16: |     |  |    |    |    |oo   | {CV}
+              - 17: |     |  |    |    |    |oo   | {NLP}
+              - 18: |-1/27|--|----|----|----|-----| {system design, data engineering}
+                - Shivank Agarwal (archived): |xoooo|ooooo|ooooo|ooooo|ooooo|oo   |
+                  - 1
+                    - 26:00 - using example of facebook to talk about data flow
+                    - keeping data and code in separate machines (awfully long time spent on such a simple concept)
+                    - vertical scaling vs horizontal scaling pros and cons of both
+                    - load balancer
+                      - private vs public IP
+                      - `nslookup google.com`
+                    - youtube example: read vs write requests
+                      - master slave relationship
+                    - cache
+                    - BREAK
+                    - CDN servers (akamai): works just like a cache
+                    - system design in ML
+                      - interview topics
+                        - functional requirements
+                        - non-functional requirements
+                        - mathematical estimates
+                        - data flow / API design
+                        - HLD
+                        - Detailed Design
+              - 19: |-----|--|----|----|----|-----| {GenAI, LLM}
+              - 20: |-----|--|----|----|----|-----| {Py1}
+              - 21: |-----|--|----|----|----|-----| {Py2}
+              - 22: |-----|--|----|----|----|-----| {SQL}
+              - 23: |-----|--|----|----|----|-----| {Tableau, Excel}
+              - 24: |-----|--|----|----|----|-----| {Advanced DSA 1}
+              - 25: |-----|--|----|----|----|-----| {Advanced DSA 2}
+              - 26: |-----|--|----|----|----|-----| {Advanced DSA 3}
+              - 27: |-----|--|----|----|----|-----| {Advanced DSA 4}
+              - 28: |-----|--|----|----|----|-----| {Domain Analytics}
         - tools
           - tableau
           - excel
+        - problem algorithm
+          - scaling
+            - src
+              - [perplexity](https://www.perplexity.ai/search/7818e853-a3c7-4080-ae76-83a785f67183)
+            - standard scaling
+            - min-max scaling
+          - encoding
+            - label encoding
+            - OHE
+            - target encoding
+          - classification
+            - multiclass + non-linear
+              - knn family
+                - simple knn
+                - weighted knn
+          - regression
+            - linear regression
+              - loss
+                - MSE
+                - MAE
+              - metric
+                - R2 Score
+                  - src
+                    - [perplexity](https://www.perplexity.ai/search/12ac93f1-079a-43e7-ae95-85a2f9d3b19c)
+                - Adjusted R2 Score
+          - clustering
+          - anomaly detection
+          - class imbalance
+            - smote family
+          - dimensionality reduction
+          - recommendation
+          - forecasting
+          - images
+            - image classification
+          - text
+            - topic modeling
         - types of types
           - representation
             - tree
@@ -1346,6 +1562,10 @@
           - cs
             - john backus
             - kenneth iverson
+            - fabrice bellard
+            - linus torvald
+            - giudo von rossum
+            - lambert meertens
           - economics
             - thomas piketty
         - product

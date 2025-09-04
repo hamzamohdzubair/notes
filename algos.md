@@ -35,3 +35,5 @@
 | One-Class SVM | NP | D | U | Anom | Tab | N | N | N | Y | Y | Y | L | M | N | – | N | – | No | ν | Margin, Smooth | O(n²–n³)/O(s) | boundary on normal |
 | ARIMA | P | G | S | Reg/Fore | Time | Y | Y | N | Y | N | Y | M | L | ~ | – | N | – | – | – | Station | O(n)/O(1) | classical TS |
 | Kalman Filter | P | G | S/U | Seq/Fore | Time | Y | Y | N | Y | N | Y | M | M | Y | – | N | – | – | Priors | Gauss, Lin | O(n d³)/O(d²) | state-space |
+
+StatsCartoonBook
