@@ -1,5 +1,9 @@
 # topic tree
 
+- learning technique
+  - source tree : summarize source into topics
+  - topic tree  : explore topics using LLMs, wiki, google
+  - shadow teach: select random topic from topic tree and source tree and shadow teach the topic, use source and exploration to go deep.
 - apps
   - lazyvim
   - qutebrowser
@@ -403,6 +407,7 @@
       - linear algebra
         - src
           - [brightsideofmath](https://www.youtube.com/watch?v=SrhtsGd0y1s&list=PLBh2i93oe2qvHhhyzyoga6PR5LPoJEXwy)
+          - [3blue1brown/essence-of-linear-algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
         - building blocks
           - objects
             - scalars
@@ -432,6 +437,8 @@
             - invertibility
             - transpose
           - matrix taxonomy
+            - src
+              - [visual-kernel](https://www.youtube.com/watch?v=7Gtxd-ew4lk)
             - rectangular
               - dimension eraser
               - dimension adder
@@ -461,6 +468,8 @@
             - eigendecomposition
               - diagonalization
               - spectral decomposition
+                - src
+                  - [visual-kernal](https://www.youtube.com/watch?v=mhy-ZKSARxI)
             - matrix diagonalization
             - cholesky decomposition
             - LU
@@ -485,6 +494,11 @@
           - src
             - [perplexity](https://www.perplexity.ai/search/34f49bc3-cd57-40d3-a3b3-5ca996be321e)
           - formal definition
+          - 4 fundamental subspaces
+            - column space
+            - null space
+            - row space
+            - left null space
       - optimization
         - src
           - [brownlee/optimization](https://drive.google.com/file/d/1PMCpMJOyJABUbM-vsQdstKvu49xVkCDD/view?usp=drive_link)
@@ -981,8 +995,8 @@
 
                 | context | algo |
                 |---|---|
-                | small | insertion |
-                | large | quick |
+                | small | insertion sort |
+                | large | quick sort |
                 | default | tim (insertion + merge) |
             - algos
               - bitonic
@@ -1114,8 +1128,8 @@
                       - perpendicular lines
                     - jupyter
                       - manually change m and c to find the best line
-              - 9:  | 3/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
-                - Aditya Jain (main): |xxxoo|ooooo|o
+              - 9:  | 4/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
+                - Aditya Jain (main): |xxxxo|ooooo|o
                   - 1 | Intro to mL
                     - types of plots depending on data types
                     - definitions of ML
@@ -1184,8 +1198,18 @@
                     - Adjusted R2 score
                     - calculating R2 score using sklearn
                     - BREAK
+                    - OLS using statsmodels.api
+                    - OLS vs SKlearn (wrong: it should be OLS vs numerical methods)
+                    - Assumptions of Linear Regression
+                      - Presence of Linearity
+                      - Absence of multicollinearity
+                        - what is the problem with multicollinearity
+                  - 5 | Linear Regression 5
+                    - VIF
+                    - VIF in code
+                      - statsmodels.stats.outliers_influence.variance_inflation_factor
               - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
-                - Rohit (main): |xoooo|ooooo|oo   |
+                - Rohit (main):                   |xoooo|ooooo|oo   |
                   - 1
                     - SMOTE
                       - oversampling
@@ -1210,6 +1234,19 @@
                       - Neighborhood is homogenous
                   - 2
                   - 3
+                - Nikhil Sanghi (video library):  |xoooo|ooooo|oo   |
+                  - 1
+                    - detailed and useless description of blinkit delivery store problem
+                    - brief intuition of PCA
+                    - jupyter notebook
+                      - brief description of data
+                      - train, val, test split
+                    - KNN intuition
+                      - assumption of homegenity
+                    - KNN algorithm
+                      - hyperparameter tuning
+                      - pros and cons
+                    - Time complexity of KNN algorithm
               - 11: |  /  |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
               - 12: |  /  |  |    | 22%|  9%|ooo  | {Time Series, Recommender Systems}
               - 13: | 1/12|B | 77%|100%|100%|oooo | {MLops: Git, Streamlit, Flask, Docker, AWS, CI/CD, MLFlow, System Design, AWS SageMaker, Apache Spark}
@@ -1318,6 +1355,13 @@
             - label encoding
             - OHE
             - target encoding
+          - tie breaker
+            - src
+              - [perplexity](https://www.perplexity.ai/search/26161ceb-0b93-49bf-a77d-da48580844fb)
+            - random
+            - distance based
+            - biased based
+            - natural stop point
           - classification
             - multiclass + non-linear
               - knn family
@@ -1325,6 +1369,14 @@
                 - weighted knn
           - regression
             - linear regression
+              - src
+                - [zedstatistics(40min)](https://www.youtube.com/watch?v=eYTumjgE2IY)
+                  - objectives of regression
+                  - population regression equation
+                  - sample regression line
+                  - sse/ssr/sst
+                  - R-squared
+                  - degrees of freedom / adj R-squared
               - loss
                 - MSE
                 - MAE
@@ -1333,6 +1385,13 @@
                   - src
                     - [perplexity](https://www.perplexity.ai/search/12ac93f1-079a-43e7-ae95-85a2f9d3b19c)
                 - Adjusted R2 Score
+              - Assumptions of Linear Regression
+                - Presence of Linearity
+                - Absence of multicollinearity
+                  - src
+                    - [zedstatistics(27min)](https://www.youtube.com/watch?v=Cba9LJ9lS8s)
+                - Heteroskedasticity, Autocorrelation
+                - Normality of Residuals
           - clustering
           - anomaly detection
           - class imbalance
@@ -1363,10 +1422,10 @@
                   - logistic regression
                   - multinomial logistic / softmax regression
                   - locally weighted regression
-                - naive bayes
-                  - gaussian
+                - naive Bayes
+                  - Gaussian
                   - multinomial
-                  - bernoulli
+                  - Bernoulli
                 - svm
                 - knn
                 - decision trees
