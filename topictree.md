@@ -1,9 +1,9 @@
 # topic tree
 
 - learning technique
-  - source tree : summarize source into topics
-  - topic tree  : explore topics using LLMs, wiki, google
-  - shadow teach: select random topic from topic tree and source tree and shadow teach the topic, use source and exploration to go deep.
+  - Source Meta Summaries   : summarize source into topics
+  - Random Access Topic Tree: explore topics using LLMs, wiki, google
+  - Shadow Teaching         : select random topic from topic tree and source tree and shadow teach the topic, use source and exploration to go deep.
 - apps
   - lazyvim
   - qutebrowser
@@ -624,13 +624,52 @@
           - transportation problem
           - traveling salesman problem
       - group-theory
+        - burnside's lemma
+          - src
+            - [3blue1brown](https://www.youtube.com/watch?v=_BrFKp-U8GI)
       - real-analysis
       - prob-stats
         - src
           - [stanford/cs109](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg)
             - |ooooo|ooooo|ooooo|ooooo|ooooo|oooo |
+              - 1  | Counting
+              - 2  | Combinatorics
+              - 3  | What is probability
+              - 4  | Conditional Probability and Bayes
+              - 5  | Independence
+              - 6  | Random Variables and Expectation
+              - 7  | Variance, Bernoulli, Binomial
+              - 8  | Poisson
+              - 9  | Continuous Random Variables
+              - 10 | Normal Distribution
+              - 11 | Joint Distribution
+              - 12 | Inference I
+              - 13 | Inference II
+              - 14 | Modeling
+              - 15 | General Inference
+              - 16 | Beta
+              - 17 | Adding Random Variables
+              - 18 | Central Limit Theorem
+              - 19 | Bootstrapping and P-values
               - 20 | Algorithmic Analysis
                 - Law of Unconscious Statistician (LOTUS)
+                - Problem: Number of tries to fill all hash buckets
+                - Conditional Expectation
+                  - Problem: Sum of Dice
+                  - Key
+                  - Example: Favourite digit by year at college
+                  - Example: Units taken by year at college
+                  - Law of Total Expectation / Law of Iterated Expectation (LIE) / Adam's Rule / Tower Rule / Smoothing Property of Conditional Expectation
+                  - How long it takes to donwload a movie
+              - 21 | MLE
+              - 22 | MAP
+              - 23 | Naive Bayes
+              - 24 | Logistic Regression
+              - 25 | Deep Learning
+              - 26 | Fairness
+              - 27 | Advanced Probability
+              - 28 | Future of Probability
+              - 29 | Counting
           - [demos](https://onlinestatbook.com/)
         - counting-theory
           - src
@@ -745,6 +784,9 @@
                 - printf
                 - sizeof
               -
+            - memory management
+              - src
+                - [boot.dev/tjdevries](https://www.boot.dev/courses/learn-memory-management-c)
           - shell
             - concepts
               - ~
@@ -970,6 +1012,17 @@
         - tasks
           - reverse a list
       - dsa
+        - src
+          - [abdulbari](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
+            - 2.6.3 | Heap
+              - Array representation of BT
+              - Complete BT
+              - Heap
+              - Insert and Delete in Heap
+              - Heap sort
+              - Heapify
+              - Priority Queue
+          - [mit](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
         - structures
           - arrays
           - arraylists
@@ -983,8 +1036,15 @@
           - linkedlists
           - dictionaries
           - trees
+            - binary tree
+              - full binary tree
+              - complete binary tree
           - tries
           - heaps
+            - max heap
+              - complete binary tree + all child nodes smaller/equal than parent node
+            - min heap
+              - complete binary tree + all child nodes bigger/equal than parent node
           - graphs
         - algorithms
           - program vs algorithm
@@ -1041,7 +1101,7 @@
             -
       - design
         - src
-          - [book/kleppmann](/Users/hamzazubair/gdrive/archive/books/cs-math-dsml/DesigningDataIntensiveApplications-Kleppmann.pdf)
+          - [book/kleppmann](~/gdrive/archive/books/cs-math-dsml/DesigningDataIntensiveApplications-Kleppmann.pdf)
       - ops
         - git
           - config
@@ -1098,6 +1158,33 @@
                       - pd.crosstab(index, columns, margin)
                       - conditional probabilities from joint-frequency table
               - 4:  |  /  |A | 90%|100%| 86%|oo   | {Hypothesis Testing, Ztest, T-Test, Chisquared, ANOVA, correlation test, Feature Engineering}
+                - Ajay Shenoy: |ooooo|ooooo|
+                  - 1  | Intro to Hypothesis Testing
+                  - 2  | Z-test
+                  - 3  | Z-test II
+                  - 4  | T-test
+                  - 5  | Chisquared
+                  - 6  | ANOVA
+                  - 7  | Advanced Hypothesis Testing
+                  - 8  | Correlation
+                  - 9  | Feat Engg. I (Aditya Jain)
+                    - what is features / target
+                    - Example of feature engineering: height + weight = bmi -> fitness
+                    - Jupyter: loan.csv
+                      - dropping ID column
+                      - get summaries of numerical columns as well as categorical columns
+                      - check the dtype of columns and filter based on dtype
+                      - get the number of missing values
+                      - univariate analysis
+                        - plot distributions
+                      - hypothesis testing
+                    - BREAK
+                    - skewness
+                    - kurtosis
+                    - binning
+                    - chi2-contingency
+                    - if income does not have an effect on loan status, combining with loan amount, loan term, it can have an effect
+                  - 10 | Feat Engg. II
               - 5:  |  /  |A+|100%|100%| 65%|oo   | {Product Analytics: Product Metrics, RCA, CRM Analytics, A/B Testing, Guess Estimate, Flight Overbooking}
               - 6:  |  /  |  |    |  0%|  0%|ooo  | {Common Core Tools: SQL + Excel + Tableau}
               - 7:  |  /  |  |    | 86%| 80%|oo   | {OOPS, FP, Exception Handling, Modules, Files}
@@ -1128,8 +1215,8 @@
                       - perpendicular lines
                     - jupyter
                       - manually change m and c to find the best line
-              - 9:  | 4/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
-                - Aditya Jain (main): |xxxxo|ooooo|o
+              - 9:  | 5/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
+                - Aditya Jain (main): |xxxxx|ooooo|o
                   - 1 | Intro to mL
                     - types of plots depending on data types
                     - definitions of ML
@@ -1153,7 +1240,7 @@
                         - unsupervised
                         - reinforcement
                   - 2 | Linear Regression 1
-                    - cars24 introduction
+                    - dataset: cars24 introduction
                     - jupyter
                       - cars24 data exploration
                       - encoding
@@ -1204,10 +1291,21 @@
                       - Presence of Linearity
                       - Absence of multicollinearity
                         - what is the problem with multicollinearity
-                  - 5 | Linear Regression 5
+                  - 5 | Linear Regression 4
                     - VIF
                     - VIF in code
                       - statsmodels.stats.outliers_influence.variance_inflation_factor
+                    - Normality of residuals
+                    - BREAK
+                    - Residual analysis
+                      - use it to remove outliers
+                    - Heteroskedasticity
+                    - code
+                      - how to find normality of residuals
+                      - how to find Heteroskedasticity
+                    - autocorrelation
+                    - varieties of GD
+
               - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
                 - Rohit (main):                   |xoooo|ooooo|oo   |
                   - 1
@@ -1238,7 +1336,7 @@
                   - 1
                     - detailed and useless description of blinkit delivery store problem
                     - brief intuition of PCA
-                    - jupyter notebook
+                    - code: blinkit data
                       - brief description of data
                       - train, val, test split
                     - KNN intuition
@@ -1308,8 +1406,8 @@
                     - Brief history of neural networks in one chart -> 2 AI winters
                     - Performance of classical Algorithms vs Small NN, Medium NN, Deep NN with increasing data chart
                     - Meaning of Deep NN
-              - 16: |     |  |    |    |    |oo   | {CV}
-              - 17: |     |  |    |    |    |oo   | {NLP}
+              - 16: |     |  |    |    |    |oo   | {Computer Vision}
+              - 17: |     |  |    |    |    |oo   | {Natural Language Processing}
               - 18: |-1/27|--|----|----|----|-----| {system design, data engineering}
                 - Shivank Agarwal (archived): |xoooo|ooooo|ooooo|ooooo|ooooo|oo   |
                   - 1
@@ -1345,64 +1443,80 @@
         - tools
           - tableau
           - excel
-        - problem algorithm
-          - scaling
+        - tasks
+          - major
+            - classification
+              - multiclass + non-linear
+                - knn family
+                  - simple knn
+                  - weighted knn
+            - regression
+              - linear regression
+                - src
+                  - [zedstatistics(40min)](https://www.youtube.com/watch?v=eYTumjgE2IY)
+                    - objectives of regression
+                    - population regression equation
+                    - sample regression line
+                    - sse/ssr/sst
+                    - R-squared
+                    - degrees of freedom / adj R-squared
+                - loss
+                  - MSE
+                  - MAE
+                - metric
+                  - R2 Score family
+                    - src
+                      - [wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination)
+                - Assumptions of Linear Regression
+                  - Presence of Linearity
+                  - Absence of multicollinearity
+                    - src
+                      - [zedstatistics(27min)](https://www.youtube.com/watch?v=Cba9LJ9lS8s)
+                  - Heteroskedasticity, Autocorrelation
+                  - Normality of Residuals
+            - clustering
+            - anomaly detection
+            - dimensionality reduction
+            - recommendation
+            - forecasting
+            - images
+              - image classification
+            - text
+              - topic modeling
+          - minor
             - src
-              - [perplexity](https://www.perplexity.ai/search/7818e853-a3c7-4080-ae76-83a785f67183)
-            - standard scaling
-            - min-max scaling
-          - encoding
-            - label encoding
-            - OHE
-            - target encoding
-          - tie breaker
-            - src
-              - [perplexity](https://www.perplexity.ai/search/26161ceb-0b93-49bf-a77d-da48580844fb)
-            - random
-            - distance based
-            - biased based
-            - natural stop point
-          - classification
-            - multiclass + non-linear
-              - knn family
-                - simple knn
-                - weighted knn
-          - regression
-            - linear regression
+              - [book/brownlee/data-prep](~/gdrive/archive/books/cs-math-dsml/brownlee/DataPrep4ML.pdf)
+              - [book/casari](~/gdrive/archive/books/cs-math-dsml/FeatureEngineering4ML-Casari.pdf)
+              - [book/feature-engineering-AtoZ](https://feaz-book.com/categorical-thermometer)
+            - scaling
               - src
-                - [zedstatistics(40min)](https://www.youtube.com/watch?v=eYTumjgE2IY)
-                  - objectives of regression
-                  - population regression equation
-                  - sample regression line
-                  - sse/ssr/sst
-                  - R-squared
-                  - degrees of freedom / adj R-squared
-              - loss
-                - MSE
-                - MAE
-              - metric
-                - R2 Score
-                  - src
-                    - [perplexity](https://www.perplexity.ai/search/12ac93f1-079a-43e7-ae95-85a2f9d3b19c)
-                - Adjusted R2 Score
-              - Assumptions of Linear Regression
-                - Presence of Linearity
-                - Absence of multicollinearity
-                  - src
-                    - [zedstatistics(27min)](https://www.youtube.com/watch?v=Cba9LJ9lS8s)
-                - Heteroskedasticity, Autocorrelation
-                - Normality of Residuals
-          - clustering
-          - anomaly detection
-          - class imbalance
-            - smote family
-          - dimensionality reduction
-          - recommendation
-          - forecasting
-          - images
-            - image classification
-          - text
-            - topic modeling
+                - [perplexity](https://www.perplexity.ai/search/7818e853-a3c7-4080-ae76-83a785f67183)
+              - standard scaling
+              - min-max scaling
+            - encoding
+              - label encoding
+              - OHE
+              - target encoding
+            - tie breaker
+              - src
+                - [perplexity](https://www.perplexity.ai/search/26161ceb-0b93-49bf-a77d-da48580844fb)
+              - random
+              - distance based
+              - biased based
+              - natural stop point
+            - outlier detection
+            - missing value handling
+            - detection of linearity
+              - RESET
+              - partial residual plots
+              - GAM diagnostics
+              - Lack of fit - F-test
+              - non-parametric tests
+                - CUSUM
+                - LOESS-based tests
+            - detection of normality
+            - class imbalance
+              - smote family
         - types of types
           - representation
             - tree
@@ -1462,7 +1576,9 @@
           - transformers
           - RBM
           - hopfield networks
-        - CV
+        - Computer Vision
+          - src
+            - [freecodecamp(37h)](https://www.youtube.com/watch?v=IA3WxTTPXqQ)
           - image as data
           - bit-depth
           - image operations
@@ -1665,6 +1781,18 @@
           - anti-slavery ban controversy
   - applied science
     - engineering
+      - electronics
+        - semiconductors
+          - src
+            - MINE Session by Niyaz Zubair
+              - History: The Science behind technology
+                - Most of the advancements in semiconductors are due to advancement in quantum physics
+                - Transistor - 1947
+                - Chip: multiple transistors
+                - 18K transistors (ENIAC) -> 15 Billion transistors (Common phone today in 2025)
+              - Made of sand (second most abundant element on earth)
+              - Lithography: printing circuits on wafer
+              - 225 million transistors per mmsq
     - medicine
     - biz
       - marketing
