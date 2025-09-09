@@ -661,7 +661,31 @@
                   - Example: Units taken by year at college
                   - Law of Total Expectation / Law of Iterated Expectation (LIE) / Adam's Rule / Tower Rule / Smoothing Property of Conditional Expectation
                   - How long it takes to donwload a movie
+                  - Analyzing recursive code
+                  - Differential Privacy
               - 21 | MLE
+                - overview
+                  - 1. parameter estimation
+                    - unbiased estimators
+                    - maximizing likelihood
+                    - bayesian estimation
+                  - 2. algorithms
+                    - naive bayes
+                    - logistic regression
+                  - 3. deep learning
+                - Humans can do one shot learning
+                - what are parameters
+                - unbiased estimators for normal distribution
+                - MLE
+                  - MLE normal demo
+                - arguments that maximize
+                - argmax of log
+                - MLE Algorithm
+                - Likelihood Function
+                - MLE for poisson
+                - MLE for bernoulli
+                  - continuous version of bernoulli pmf
+                - MLE for normal
               - 22 | MAP
               - 23 | Naive Bayes
               - 24 | Logistic Regression
@@ -751,6 +775,8 @@
           - types of types
             - compiled vs interpreted
           - programming paradigms
+            - src
+              - [stanford/cs107/jerry-cain](https://www.youtube.com/playlist?list=PL9D558D49CA734A02)
         - memory management
         - data types
           - pdt
@@ -1440,6 +1466,7 @@
               - 26: |-----|--|----|----|----|-----| {Advanced DSA 3}
               - 27: |-----|--|----|----|----|-----| {Advanced DSA 4}
               - 28: |-----|--|----|----|----|-----| {Domain Analytics}
+          - [book/diesenroth](~/gdrive/archive/books/cs-math-dsml/Maths4ML-Diesenroth.pdf)
         - tools
           - tableau
           - excel
