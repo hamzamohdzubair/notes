@@ -409,68 +409,45 @@
         - src
           - [brightsideofmath](https://www.youtube.com/watch?v=SrhtsGd0y1s&list=PLBh2i93oe2qvHhhyzyoga6PR5LPoJEXwy)
           - [3blue1brown/essence-of-linear-algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-        - building blocks
-          - objects
-            - scalars
-            - vectors
-            - matrices
-              - src
-                - [nptel/matrix-theory](https://www.youtube.com/playlist?list=PLbMVogVj5nJQnzk6Sn9o6RTpu4Evx0LOT)
-            - tensors
-            - vector spaces
-          - operations
-            - addition
-            - multiplication
-            - inner product
-            - norm
-            - composition
-            - decomposition
-          - properties
-            - determinant
-            - rank
-            - nullity
-            - orthogonality
-            - span
-            - basis
-            - linear dependence
-            - diagonalizability
-            - eigen
-            - invertibility
-            - transpose
-          - matrix taxonomy
+          - [nptel/matrix-theory](https://www.youtube.com/playlist?list=PLbMVogVj5nJQnzk6Sn9o6RTpu4Evx0LOT)
+        - operations
+          - addition
+          - inner product
+          - norm
+          - transformation / matrix vector multiplication
             - src
-              - [visual-kernel](https://www.youtube.com/watch?v=7Gtxd-ew4lk)
-            - rectangular
-              - dimension eraser
-              - dimension adder
-            - square
-              - binary matrix
-                - zero matrix
-                - ones matrix
-                - permutation matrix
-                  - identity matrix
-                  - exchange matrix
-              - scalar matrix / off-one / reflection
-              - diagonal matrix
-              - symmetric matrix
-              - sheer matrix
-              - orthogonal matrix
-              - projection matrix
-                - src
-                  - [sam-levey](https://www.youtube.com/watch?v=Yc6q2w8Nt38&list=PLmtbsGjqSdcaHDCHBZNywA6KOF2JawtxN&index=1)
-                - properties
-                  - idempotent
-                  - symmetric
-              - Hermitian Matrix
-        - theory
-          - matrix factorization
+              - [video/5min](https://www.youtube.com/watch?v=AheaTd_l5Is)
+            - taxonomy
+              - rectangular
+                - dimension eraser
+                - dimension adder
+              - square
+                - binary matrix
+                  - zero matrix
+                  - ones matrix
+                  - permutation matrix
+                    - identity matrix
+                    - exchange matrix
+                - scalar matrix / off-one / reflection
+                - diagonal matrix
+                - symmetric matrix
+                - sheer matrix
+                - orthogonal matrix
+                - projection matrix
+                  - src
+                    - [sam-levey](https://www.youtube.com/watch?v=Yc6q2w8Nt38&list=PLmtbsGjqSdcaHDCHBZNywA6KOF2JawtxN&index=1)
+                  - properties
+                    - idempotent
+                    - symmetric
+                - Hermitian Matrix
+                - covariance matrix
+          - composition / matrix matrix multiplication
+          - decomposition / matrix factorization
             - src
               - [brightsideofmath](https://www.youtube.com/playlist?list=PLBh2i93oe2quJ__clFXblfzPHWd-AiwRF)
             - eigendecomposition
               - diagonalization
               - spectral decomposition
-                - src
-                  - [visual-kernal](https://www.youtube.com/watch?v=mhy-ZKSARxI)
             - matrix diagonalization
             - cholesky decomposition
             - LU
@@ -484,6 +461,47 @@
             - Jordan
             - QR
             - SVD
+              - src
+                - [playlist/visual-kernel](https://www.youtube.com/playlist?list=PLWhu9osGd2dB9uMG5gKBARmk73oHUUQZS)
+                  - 1 | Visualize part 1
+                    - what is a vector
+                    - how to multiply a matrix and vector
+                    - visual engine
+                    - taxonomy
+                      - identity matrix
+                      - scalar matrix
+                        - scaling in 3D
+                        - scaling along a single axis
+                        - effect of negative, fractional, and positive
+                      - diagonal matrix
+                      - zero matrix
+                  - 2 | Visualize part 2
+                    - sheer matrix
+                      - sheer vs scale
+                    - orthogonal matrix
+                    - projection matrix
+                    - inverse
+                    - what is a matrix
+                  - 3 | Spectral decomposition
+                    - Symmetric Matrix
+                    - Transpose
+                    - Decomposition
+                    - Eigen Vectors
+                    - orthogonal eigen vectors
+                    - spectral decomposition
+                  - 4 | SVD
+        - properties
+          - determinant
+          - rank
+          - nullity
+          - orthogonality
+          - span
+          - basis
+          - linear dependence
+          - diagonalizability
+          - eigen
+          - invertibility
+          - transpose
         - applications
           - systems of linear equations
           - dimensionality reduction
@@ -1593,16 +1611,21 @@
                 - LOESS-based tests
             - detection of normality
             - balancing classes
-              - smote family
-                - src
-                  - [perplexity](https://www.perplexity.ai/search/what-are-the-variants-of-smote-FJS5eK1xTrqrtxi3OWoCww)
-                - borderline SMOTE
-                - SMOTE NC
-                - ADASYN
-                - SMOTE-ENN
-                - SMOTE-TOMEK
-                - Kmeans SMOTE
-                - SVM SMOTE
+              - cost-sensitive
+              - classification algorithm based heuristics
+              - oversampling
+                - smote family
+                  - src
+                    - [perplexity](https://www.perplexity.ai/search/what-are-the-variants-of-smote-FJS5eK1xTrqrtxi3OWoCww)
+                    - [paper/smote-comparison](~/gdrive/archive/books/cs-math-dsml/papers/SMOTEComparison.pdf)
+                  - borderline SMOTE
+                  - SMOTE NC
+                  - ADASYN
+                  - SMOTE-ENN
+                  - SMOTE-TOMEK
+                  - Kmeans SMOTE
+                  - SVM SMOTE
+              - undersampling
         - types of types
           - representation
             - tree
