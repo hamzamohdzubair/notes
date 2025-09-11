@@ -158,11 +158,12 @@
         - chemical kinetics
           - Reactions
             - Reaction Types
+              - src
+                - [simple](https://www.youtube.com/watch?v=WWJQpuv9ElE)
               - Combination
               - Decomposition
               - Displacement
               - Double Displacemnt
-              - Redox
             - Reactivity Rank
         - quantum chemistry
         - statistical mechanics
@@ -686,6 +687,8 @@
                 - MLE for bernoulli
                   - continuous version of bernoulli pmf
                 - MLE for normal
+                - MLE for Uniform
+                - Properties of MLE
               - 22 | MAP
               - 23 | Naive Bayes
               - 24 | Logistic Regression
@@ -927,6 +930,7 @@
           - python
             - src
               - [documentary](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
+                - inspired by ABC
             - what is python
             - installation
             - programming elements
@@ -1035,6 +1039,10 @@
           - ts
           - java
           - fortran
+          - haskell
+            - src
+              - [book/thompson](~/gdrive/archive/books/cs-math-dsml/HaskellCraftFP-Thompson.pdf)
+              - [tutorial(2.5h)](https://www.youtube.com/watch?v=TklkNLihQ_A)
         - tasks
           - reverse a list
       - dsa
@@ -1331,7 +1339,6 @@
                       - how to find Heteroskedasticity
                     - autocorrelation
                     - varieties of GD
-
               - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
                 - Rohit (main):                   |xoooo|ooooo|oo   |
                   - 1
@@ -1467,10 +1474,32 @@
               - 27: |-----|--|----|----|----|-----| {Advanced DSA 4}
               - 28: |-----|--|----|----|----|-----| {Domain Analytics}
           - [book/diesenroth](~/gdrive/archive/books/cs-math-dsml/Maths4ML-Diesenroth.pdf)
-        - tools
-          - tableau
-          - excel
-        - tasks
+        - toolbox
+          - software
+            - tableau
+            - excel
+          - algos
+            - general steps
+              - training / parameter estimation
+              - tuning / hyperparameter estimation
+              - inference / prediction
+            - Linear Family
+            - KNN Family
+            - Tree Family
+            - SVM Family
+            - NN Family / ANN
+              - FFNN
+                - SLP
+                  - Math
+                  - Code (Functional, Objective)
+                - MLP
+                  - activation functions
+                - CNN
+              - RNN
+              - transformers
+              - RBM
+              - hopfield networks
+        - taskbox
           - major
             - classification
               - multiclass + non-linear
@@ -1501,15 +1530,36 @@
                       - [zedstatistics(27min)](https://www.youtube.com/watch?v=Cba9LJ9lS8s)
                   - Heteroskedasticity, Autocorrelation
                   - Normality of Residuals
+              - polynomial regression
+              - logistic regression
+              - multinomial logistic / softmax regression
+              - locally weighted regression
             - clustering
             - anomaly detection
             - dimensionality reduction
             - recommendation
+              - Market Basket Analysis
+                - apriori
+                - ais
+                - setm
+                - fp
+                - elcat
+              - Collaborative Filtering
+              - Content-Based Filtering
+              - knowlege-based and constrained-based systems
             - forecasting
             - images
-              - image classification
+              - src
+                - [freecodecamp(37h)](https://www.youtube.com/watch?v=IA3WxTTPXqQ)
+              - image as data
+              - bit-depth
+              - image operations
+              - poisson denoising
+              - matrix operations
+              - convolution / filtering
             - text
               - topic modeling
+            - learning by feedback / RL
           - minor
             - src
               - [book/brownlee/data-prep](~/gdrive/archive/books/cs-math-dsml/brownlee/DataPrep4ML.pdf)
@@ -1542,8 +1592,17 @@
                 - CUSUM
                 - LOESS-based tests
             - detection of normality
-            - class imbalance
+            - balancing classes
               - smote family
+                - src
+                  - [perplexity](https://www.perplexity.ai/search/what-are-the-variants-of-smote-FJS5eK1xTrqrtxi3OWoCww)
+                - borderline SMOTE
+                - SMOTE NC
+                - ADASYN
+                - SMOTE-ENN
+                - SMOTE-TOMEK
+                - Kmeans SMOTE
+                - SVM SMOTE
         - types of types
           - representation
             - tree
@@ -1553,68 +1612,6 @@
             - logical
           - evaluation
           - optimization
-        - Supervised
-          - Classification/Regression
-            - algos
-              - list
-                - regression
-                  - linear regression
-                  - polynomial regression
-                  - logistic regression
-                  - multinomial logistic / softmax regression
-                  - locally weighted regression
-                - naive Bayes
-                  - Gaussian
-                  - multinomial
-                  - Bernoulli
-                - svm
-                - knn
-                - decision trees
-                - ensembling
-                  - bagging
-                  - boosting
-                  - stacking
-          - Time Series
-            - performance metrics
-        - Recommender Systems
-          - Market Basket Analysis
-            - apriori
-            - ais
-            - setm
-            - fp
-            - elcat
-          - Collaborative Filtering
-          - Content-Based Filtering
-          - knowlege-based and constrained-based systems
-        - Unsupervised
-          - Clustering
-            - performance metrics
-          - Dimensionality Reduction
-            - performance metrics
-        - ANN
-          - FFNN
-            - SLP
-              - Math
-              - Code (Functional, Objective)
-            - MLP
-              - activation functions
-            - CNN
-          - RNN
-          - transformers
-          - RBM
-          - hopfield networks
-        - Computer Vision
-          - src
-            - [freecodecamp(37h)](https://www.youtube.com/watch?v=IA3WxTTPXqQ)
-          - image as data
-          - bit-depth
-          - image operations
-          - poisson denoising
-          - matrix operations
-          - convolution / filtering
-        - NLP
-        - RL
-        - Ops
   - social science
     - society
       - sociology
@@ -1670,6 +1667,8 @@
               - sink
                 - arabian
                 - bay of bengal
+            - towns
+              - palashi
         - personalities
           - fathers of fields
             - theodor herzl
