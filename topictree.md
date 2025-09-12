@@ -409,14 +409,23 @@
         - src
           - [brightsideofmath](https://www.youtube.com/watch?v=SrhtsGd0y1s&list=PLBh2i93oe2qvHhhyzyoga6PR5LPoJEXwy)
           - [3blue1brown/essence-of-linear-algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-          - [nptel/matrix-theory](https://www.youtube.com/playlist?list=PLbMVogVj5nJQnzk6Sn9o6RTpu4Evx0LOT)
+          - [nptel/chandramurthi/matrix-theory/80vid](https://www.youtube.com/playlist?list=PLbMVogVj5nJQnzk6Sn9o6RTpu4Evx0LOT)
+          - [playlist/bazett/83vid](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxfUl0tcqPNTJsb7R6BqSLo6)
         - operations
-          - addition
-          - inner product
+          - vector vector addition
+          - vector vector multipliation
+            - src
+              - [talk/freya-holmer/51min](https://www.youtube.com/watch?v=hUlvxaQBW78)
+                - products
+                  - dot
+                  - cross
+                  - 2d cross / perpendicular dot product / exterior / determinant / wedge / anti-symmetrric product
+                  - hadamard
           - norm
           - transformation / matrix vector multiplication
             - src
               - [video/5min](https://www.youtube.com/watch?v=AheaTd_l5Is)
+              - [video/visually-explained/10min](https://www.youtube.com/watch?v=2uKoKKLgZ4c&list=PLqwozWPBo-FtOsjrla4jk6GYcxX1aN_1a&index=1)
             - taxonomy
               - rectangular
                 - dimension eraser
@@ -490,6 +499,10 @@
                     - orthogonal eigen vectors
                     - spectral decomposition
                   - 4 | SVD
+                    - Dimension Eraser
+                    - Dimension Adder
+                    - Creating symmetric matrices
+                    - singular values
         - properties
           - determinant
           - rank
@@ -518,7 +531,7 @@
             - null space
             - row space
             - left null space
-      - optimization
+      - optimization / mathematical programming
         - src
           - [brownlee/optimization](https://drive.google.com/file/d/1PMCpMJOyJABUbM-vsQdstKvu49xVkCDD/view?usp=drive_link)
         - types of types
@@ -1795,11 +1808,16 @@
         - product
           - dettol
           - agent orange
+            - src
+              - [veritasium/documentary/46min](https://www.youtube.com/watch?v=CxVXvFOPIyQ)
+          - escalator
+            - src
+              - [veritasium/documentary/22min](https://www.youtube.com/watch?v=tZ8ehplVFp4)
         - company
           - blackrock
           - monsanto
             - src
-              - [veritasium](https://www.youtube.com/watch?v=CxVXvFOPIyQ)
+              - [veritasium/documentary/46min](https://www.youtube.com/watch?v=CxVXvFOPIyQ)
         - idea
           - renaissance philosophy
           - presentism
