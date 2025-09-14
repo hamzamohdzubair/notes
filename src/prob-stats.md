@@ -1,0 +1,75 @@
+# prob-stats
+
+- src
+  - [stanford/cs109](https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg)
+    - |ooooo|ooooo|ooooo|ooooo|ooooo|oooo |
+      - 1  | Counting
+      - 2  | Combinatorics
+      - 3  | What is probability
+      - 4  | Conditional Probability and Bayes
+      - 5  | Independence
+      - 6  | Random Variables and Expectation
+      - 7  | Variance, Bernoulli, Binomial
+      - 8  | Poisson
+      - 9  | Continuous Random Variables
+      - 10 | Normal Distribution
+      - 11 | Joint Distribution
+      - 12 | Inference I
+      - 13 | Inference II
+      - 14 | Modeling
+      - 15 | General Inference
+      - 16 | Beta
+        - random variable of probabilities
+        - how to tell which is better 10k likes and 50 dislikes vs 10 likes 0 dislikes
+        - flipping plates game
+        - what if we don't know the p of a coin or a plate: say for a weird coin
+          - using bayes theorem to calculate posterior when the p of binomial is unknown
+      - 17 | Adding Random Variables
+      - 18 | Central Limit Theorem
+      - 19 | Bootstrapping and P-values
+      - 20 | Algorithmic Analysis
+        - Law of Unconscious Statistician (LOTUS)
+        - Problem: Number of tries to fill all hash buckets
+        - Conditional Expectation
+          - Problem: Sum of Dice
+          - Key
+          - Example: Favourite digit by year at college
+          - Example: Units taken by year at college
+          - Law of Total Expectation / Law of Iterated Expectation (LIE) / Adam's Rule / Tower Rule / Smoothing Property of Conditional Expectation
+          - How long it takes to donwload a movie
+          - Analyzing recursive code
+          - Differential Privacy
+      - 21 | MLE
+        - overview
+          - 1 parameter estimation
+            - unbiased estimators
+            - maximizing likelihood
+            - bayesian estimation
+          - 2 algorithms
+            - naive bayes
+            - logistic regression
+          - 3 deep learning
+        - Humans can do one shot learning
+        - what are parameters
+        - unbiased estimators for normal distribution
+        - MLE
+          - MLE normal demo
+        - arguments that maximize
+        - argmax of log
+        - MLE Algorithm
+        - Likelihood Function
+        - MLE for poisson
+        - MLE for bernoulli
+          - continuous version of bernoulli pmf
+        - MLE for normal
+        - MLE for Uniform
+        - Properties of MLE
+      - 22 | MAP
+      - 23 | Naive Bayes
+      - 24 | Logistic Regression
+      - 25 | Deep Learning
+      - 26 | Fairness
+      - 27 | Advanced Probability
+      - 28 | Future of Probability
+      - 29 | Counting
+  - [demos](https://onlinestatbook.com/)

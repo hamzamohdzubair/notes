@@ -1,0 +1,12 @@
+# dsa
+- src
+  - [abdulbari](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
+    - 2.6.3 | Heap
+      - Array representation of BT
+      - Complete BT
+      - Heap
+      - Insert and Delete in Heap
+      - Heap sort
+      - Heapify
+      - Priority Queue
+  - [mit](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)

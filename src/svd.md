@@ -1,0 +1,43 @@
+# SVD
+
+- src
+  - [playlist/visual-kernel](https://www.youtube.com/playlist?list=PLWhu9osGd2dB9uMG5gKBARmk73oHUUQZS)
+    - 1 | Visualize part 1
+      - what is a vector
+      - how to multiply a matrix and vector
+      - visual engine
+      - taxonomy
+        - identity matrix
+        - scalar matrix
+          - scaling in 3D
+          - scaling along a single axis
+          - effect of negative, fractional, and positive
+        - diagonal matrix
+        - zero matrix
+    - 2 | Visualize part 2
+      - sheer matrix
+        - sheer vs scale
+      - orthogonal matrix
+      - projection matrix
+      - inverse
+      - what is a matrix
+    - 3 | Spectral decomposition
+      - Symmetric Matrix
+      - Transpose
+      - Decomposition
+      - Eigen Vectors
+      - orthogonal eigen vectors
+      - spectral decomposition
+    - 4 | SVD
+      - Dimension Eraser
+      - Dimension Adder
+      - Creating symmetric matrices
+      - singular values
+  - [playlist/brunton/43vids](https://www.youtube.com/playlist?list=PLMrJAkhIeNNSVjnsviglFoY2nXildDCcv)
+    - 1 | overview
+      - data-driven generalization of Fourier Transform
+      - aplications
+        - solve system of linear equations Ax = b for non square A
+        - perform OLS regression
+        - perform PCA
+        - look at correlations
