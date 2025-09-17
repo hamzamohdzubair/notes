@@ -1,4 +1,5 @@
 # dsa
+
 - src
   - [abdulbari](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
     - 2.6.3 | Heap
@@ -9,4 +10,12 @@
       - Heap sort
       - Heapify
       - Priority Queue
+    - 8     | NP-Hard and NP-complete
+      - Algorithms that take polynomial time and algorithms that take exponential time
+      - what is deterministic vs nondeterministic
+      - Relatability of different algorithms
+      - Satisfiability problem
+      - Reduction
+      - NP-hard vs NP-complete
+      - Cook's theorem
   - [mit](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)

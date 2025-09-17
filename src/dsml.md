@@ -176,7 +176,7 @@
               - Presence of Linearity
               - Absence of multicollinearity
                 - what is the problem with multicollinearity
-          - 5 |  Linear Regression 4
+          - 5 | Linear Regression 4
             - VIF
             - VIF in code
               - statsmodels.stats.outliers_influence.variance_inflation_factor
@@ -191,8 +191,8 @@
             - autocorrelation
             - varieties of GD
       - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
-        - Rohit (main):                   |xoooo|ooooo|oo   |
-          - 1
+        - Rohit (main):                   |xoooo|ooooo|xo   |
+          - 1  | KNN 1
             - SMOTE
               - oversampling
               - undersampling
@@ -214,9 +214,44 @@
               - classification report using sklearn
             - assumptions of KNN
               - Neighborhood is homogenous
-          - 2
-          - 3
-        - Nikhil Sanghi (VidLib):  |xoooo|ooooo|oo   |
+          - 2  | KNN 2
+          - 3  | DT 1
+          - 4  | DT 2
+          - 5  | Bagging and RF
+          - 6  | Boosting 1
+          - 7  | Boosting 2
+          - 8  | Other Ensemble Techniques
+          - 9  | Naive Bayes 1
+          - 10 | Naive Bayes 2
+          - 11 | SVM 1
+            - Spam and Ham
+            - Intuition of SVM
+            - why do we need a large margin
+            - nickname
+              - margin-maximizing classifier
+            - equations of margins of hyperplane
+            - distance between margins
+            - [interactive demo](https://greitemann.dev/svm-demo)
+            - Hard margin SVM
+            - desmos demo
+            - Is hard margin svm practical?
+            - BREAK
+            - Hard Margin SVM
+              - Failure case
+            - Soft Margin SVM
+              - slack variable
+              - total slack
+            - role of hyperparameter C
+            - Hinge loss
+            - Hinge loss with respect to margin of the true side
+          - 12 | SVM 2 [code](https://colab.research.google.com/drive/1OT7QRWm0W6aaE2RV6ikTKfVVevWXrRNb?usp=sharing)
+            - SVM vs SVC
+            - 12m-36m/very very long recap
+              - how is svc different from logistic regression
+            - 36m-/optimization function
+              - primal form
+            - 38m-/information theory
+        - Nikhil Sanghi (VidLib):         |xoooo|ooooo|oo   |
           - 1
             - detailed and useless description of blinkit delivery store problem
             - brief intuition of PCA
@@ -229,7 +264,7 @@
               - hyperparameter tuning
               - pros and cons
             - Time complexity of KNN algorithm
-      - 11: | 1/9 |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
+      - 11: | 2/9 |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
         - Rohit (main):                   |ooooo|oooo |
           - 1 | PCA | [colab](https://colab.research.google.com/drive/1E_zWvbrptcfVYHcjcJgyP7w9xcHtoBVH?usp=sharing)
             - CASE/mnist
@@ -249,7 +284,7 @@
           - 7 | Hierarchical Clustering
           - 8 | DBSCAN
           - 9 | Anomaly Detection
-        - Nikhil Sanghi (VidLib)
+        - Nikhil Sanghi (VidLib)          |xxooo|oooo |
           - 1  | KMeans
             - what is unsupervised
             - CASE/nykaa
@@ -271,6 +306,17 @@
               - KMeans not even discussed in this class
               - [DEMO](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/)
           - 2  | Kmeans++
+            - DUNN Index
+              - range
+            - KMeans process
+              - Demo
+              - Algorithm
+            - LLoyod's Algorithm
+            - WCSS
+            - Silhouette score
+            - BREAK
+            - Elbow method
+            - CODE
           - 3  | Hierarchical Clustering
           - 4  | GMM
           - 5  | Anomaly / Outlier / Novelty I

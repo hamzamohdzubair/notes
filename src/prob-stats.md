@@ -23,7 +23,34 @@
         - how to tell which is better 10k likes and 50 dislikes vs 10 likes 0 dislikes
         - flipping plates game
         - what if we don't know the p of a coin or a plate: say for a weird coin
-          - using bayes theorem to calculate posterior when the p of binomial is unknown
+          - using bayes theorem to calculate posterior when the p of binomial is unknown for a specific number of heads and tails
+          - get a proportionality term that can be plotted
+        - frequentist vs bayesian
+        - KEY1: generalising the above proportionality formula for n+m trials and n heads to get a general formula of binomial with unknown probability
+        - the formula uses parameters a for n heads + 1 and b for m tails + 1
+        - which is called the Beta Random Variable
+        - KEY2: a = wins + 1, b = losses + 1
+        - now we have two ways of representing probabilities
+          - as a single number / point estimate
+          - as a function / distribution
+        - KEY3: beta is a distribution for probs. range: [0 to 1]
+        - what if the prior in the above plate experiment was beta
+          - you get a beta
+          - beta is conjugate distribution of beta
+        - laplace Smoothing -> Beta(2,2)
+        - Uniform -> Beta(1,1)
+        - Demo of beta updating with plate flips
+        - Example: prior belief of medicine working, converting percentage to beta prior
+          - expectation of beta
+          - mode of beta
+        - how do we compare two beta
+        - MAB
+        - demo: pokemon drug
+        - Optimal decision making
+        - Upper confidence bound
+        - Thompson Sampling
+        - KEY4: The probability density for probablities
+        - Any parameter for a "parametrized" random variable can be thought of as a random variable
       - 17 | Adding Random Variables
       - 18 | Central Limit Theorem
       - 19 | Bootstrapping and P-values

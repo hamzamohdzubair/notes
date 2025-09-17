@@ -1,5 +1,30 @@
 # index.life
 
+- random
+  - @dsml
+  - @dsml, @math
+  - @dsml, @math, @python
+- goals
+  - job
+  - maang job
+  - nature paper
+  - money-making app
+  - training
+- projects
+  - job
+    - turing
+  - phd applications
+    - kaust
+    - singapore
+    - USA
+    - europe
+  - paper-ideas
+    - market basket analysis type of analysis for placement strategies
+      - find out which products should be kept together in the store, and which should be kept on the opposite sides to encourage exploration
+  - app-ideas
+    - teaching through quizzing app
+      - uses LLM
+      - uses spaced-repetition using FSRS
 - learning technique
   - Source Meta Summaries   : summarize source into topics
   - Random Access Topic Tree: explore topics using LLMs, wiki, google
@@ -10,12 +35,7 @@
   - zathura / sioyek
   - aerospace
   - ghostty
-- phd applications
-  - kaust
-  - singapore
-  - USA
-  - europe
-- topics
+- topictree
   - islam
     - quran
       - topics
@@ -223,6 +243,8 @@
           - titration
         - isotopes
           - heavy water
+            - hydrogen isotope
+            - oxygen isotope
           - use in nuclear reactors
         - biochemistry
           - role in biological systems
@@ -376,7 +398,7 @@
           - remote sensing
           - GPS & Geodesy
   - formal science
-    - math
+    - math @math
       - notation
         - iverson bracket
         - kronecker delta
@@ -506,6 +528,8 @@
       - optimization / mathematical programming
         - src
           - [brownlee/optimization](https://drive.google.com/file/d/1PMCpMJOyJABUbM-vsQdstKvu49xVkCDD/view?usp=drive_link)
+        - concepts
+          - primal-dual equivalence
         - types of types
           - solution method
             - analytical / exact
@@ -652,6 +676,9 @@
             - normal
             - lognormal
             - exponential
+          - inverse transform sampling
+            - src
+              - [ritvikmath](https://www.youtube.com/watch?v=9ixzzPQWuAY&list=PLvcbYUQ5t0UH2MS_B6maLNJhK0jNyPJUY&index=95)
         - inference-theory
           - conditional probability
           - bayes theorem
@@ -699,6 +726,8 @@
         - regression models
           - linear regression
             - generalized linear models
+              - src
+                - [simplistics](https://www.youtube.com/watch?v=SqN-qlQOM5A)
               - gee
               - mixed-effect models
           - proportional hazards
@@ -725,6 +754,8 @@
           - adt
           - ds
         - floating point error
+        - computational complexity
+          - [P-vs-NP](src/p-vs-np.md)
       - programming
         - languages
           - c
@@ -866,7 +897,7 @@
                 - rollback
                 - savepoint
                 - set transaction
-          - python
+          - @python
             - src
               - [documentary](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
                 - inspired by ABC
@@ -934,9 +965,10 @@
               - OOPS
               - FP
               - Files
-            - libraries
+            - libraries @dsml
               - data
                 - numpy
+                  - np.where
                   - indexing
                   - one-hot encoding and back
                   - creating ufunc
@@ -955,7 +987,28 @@
                 - sklearn
                   - module-tree
                     - preprocessing
-                      - StandardScaler
+                      - src
+                        - [sklearn-manual](https://scikit-learn.org/stable/modules/preprocessing.html)
+                      - mean removal, variance scaling
+                        - StandardScaler
+                        - MinMaxScaler
+                        - MaxAbsScaler
+                        - RobustScaler
+                        - KernelCenterer
+                      - non-linear transformation
+                        - QuantileTransformer
+                        - PowerTransformer
+                      - normalization
+                        - Normalizer
+                        - normalize
+                      - encoding categorical features
+                        - OrdinalEncoder
+                        - OneHotEncoder
+                        - TargetEncoder
+                      - discretization
+                      - imputation
+                      - polynomical features
+                      - custom transformers
                 - mlflow
                 - pyro
               - nn
@@ -1066,17 +1119,26 @@
           - [book/kleppmann](~/gdrive/archive/books/cs-math-dsml/DesigningDataIntensiveApplications-Kleppmann.pdf)
       - ops
         - git
-          - config
-          - commands
-            - git --version
-            - git init
-            - git status
-            - git add
-            - git commit -m ""
-            - git log
-            - git cat-file -p hash
+          - concepts and commands
+            - setup and config
+              - git --version
+              - git init
+            - creating, updating and sharing
+            - snapshotting
+              - git status
+              - git add
+              - git commit -m ""
+            - branching and merging
+            - inspection
+              - git log
+            - patching
+            - debugging
+            - plumbing
+              - git cat-file -p hash
           - lazygit
-      - [dsml](./src/dsml.md)
+        - jj
+      - [dsml](./src/dsml.md) @dsml
+        - historical threads
         - toolbox
           - software
             - tableau
@@ -1088,8 +1150,35 @@
               - inference / prediction
             - Linear Family
             - KNN Family
+              - basic knn
+              - condensed nn
+                - subset
+                - Training Set consistent
+                - prototype
+              - weighted knn
+              - radius based knn
+              - approximate nn
+              - knn with dimension reduction
             - Tree Family
             - SVM Family
+              - src
+                - [ritvikmath/15m](https://www.youtube.com/watch?v=6-ntMIaJpm0)
+              - history
+                - src
+                  - [perplexity](https://www.perplexity.ai/search/i-want-to-know-the-context-in-kgfIOTM0QGKltgDCOf3H1A)
+                - generalized portrait algorithms
+                - cold war
+                - bell labs
+              - concepts
+                - hard vs soft margin
+                - loss function
+                - hyperparameter C
+                - hinge loss
+                - primal-lagrangian-dual
+                - kernels
+              - regressor
+              - classifier
+              - clustering
             - NN Family / ANN
               - FFNN
                 - SLP
@@ -1106,11 +1195,8 @@
           - major
             - classification
               - multiclass + non-linear
-                - knn family
-                  - simple knn
-                  - weighted knn
             - regression
-              - [linear-regression](src/linear-regression.md)
+              - [linear regression](src/linear-regression.md)
                 - loss
                   - MSE
                   - MAE
@@ -1120,16 +1206,31 @@
                       - [wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination)
                 - Assumptions of Linear Regression
                   - Presence of Linearity
+                  - Normality of Residuals
                   - Absence of multicollinearity
                     - src
                       - [zedstatistics(27min)](https://www.youtube.com/watch?v=Cba9LJ9lS8s)
-                  - Heteroskedasticity, Autocorrelation
-                  - Normality of Residuals
+                  - Absence of Heteroskedasticity
+                  - Absence of Autocorrelation
+                - regularization
               - polynomial regression
+                - order
+                - BIC
               - logistic regression
               - multinomial logistic / softmax regression
               - locally weighted regression
             - clustering
+              - kmeans family
+                - ordinary kmeans
+                  - lloyd's algorithm
+                  - wcss / inertia
+                  - Dunn Index
+                  - silhouette score
+                  - Elbow Method
+                  - sensitivity to initial conditions
+                  - global optima is NP-hard
+                - kmeans++
+              - hierarchnical clustering
             - anomaly detection
             - dimensionality reduction
             - recommendation
@@ -1137,7 +1238,7 @@
                 - apriori
                 - ais
                 - setm
-                - fp
+                - FP-Growth
                 - elcat
               - Collaborative Filtering
               - Content-Based Filtering
