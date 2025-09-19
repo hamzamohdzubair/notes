@@ -1,0 +1,1 @@
+- [book/kleppmann](~/gdrive/archive/books/cs-math-dsml/DesigningDataIntensiveApplications-Kleppmann.pdf)

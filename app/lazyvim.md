@@ -1,0 +1,3 @@
+- configurations:
+  - blink.cmp:
+    - change preset to: supertab

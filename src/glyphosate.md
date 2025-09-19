@@ -1,0 +1,1 @@
+- [veritasium](https://www.youtube.com/watch?v=CxVXvFOPIyQ)

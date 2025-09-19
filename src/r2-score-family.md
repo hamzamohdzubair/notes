@@ -1,0 +1,1 @@
+- [wiki](https://en.wikipedia.org/wiki/Coefficient_of_determination)

@@ -1,0 +1,3 @@
+- [simplistics](https://www.youtube.com/watch?v=jd7x-ww7da4)
+  - 9:00/example of bimodal distribution of heights that has normal residuals
+- [simplistics/testing-normality-is-pointless](https://www.youtube.com/watch?v=AaU9b4iIbbE)

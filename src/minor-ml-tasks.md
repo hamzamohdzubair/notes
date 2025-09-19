@@ -1,0 +1,3 @@
+- [book/brownlee/data-prep](~/gdrive/archive/books/cs-math-dsml/brownlee/DataPrep4ML.pdf)
+- [book/casari](~/gdrive/archive/books/cs-math-dsml/FeatureEngineering4ML-Casari.pdf)
+- [book/feature-engineering-AtoZ](https://feaz-book.com/categorical-thermometer)

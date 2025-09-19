@@ -1,422 +1,473 @@
-# dsml
-
-- src
-  - [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
-  - [scaler](https://www.scaler.com)
-    - modules
-      - N:  |NOTES|GR|EXAM|ASMT|ATTN|RSRCH|
-      - 2:  | 1/16|B+| 80%|100%| 98%|oo   | {numpy, pandas}
-        - main (Nikhil Sanghi): |xoooo|ooooo|ooooo|
-          - 1
-            - pros and cons of numpy
-              - element-wise operation
-              - comparing the times of square by list comprehension and square by element wise operation
-              - heterogenous array not possible
-              - how numpy stores internally -> as contiguous memory
-            - arr.dtype
-            - type conversions in numpy to keep the array homogenous: boolean -> int -> float -> string
-            - np.array(list, dtype="float")
-            - python range vs numpy arange
-      - 3:  | 1/10|A+|100%|100%| 80%|oo   | {probability, combinatorics, stats, distributions, CLT}
-        - Shivam Yadav (main): |ooooo|ooooo|
-        - Ajay Shenoy: |xoooo|ooooo|
-          - 1
-            - importance of probability
-              - mention in JD
-              - amazon button color example -> conditional probability:  purchase | color = orange
-              - next word prediction as conditional probability
-            - terminology
-              - sample space
-              - experiment
-              - outcome
-              - event
-            - set operations
-              - intersection
-              - union
-              - complement
-            - mutually exclusive
-            - collectively exhaustive
-            - BREAK
-            - sachin-ODI (sachin scoring a century good for india or bad for india)
-              - value counts of two columns together -> joint-frequency table / 2-way frequency table
-                - .unstack()
-              - pd.crosstab(index, columns, margin)
-              - conditional probabilities from joint-frequency table
-      - 4:  |  /  |A | 90%|100%| 86%|oo   | {Hypothesis Testing, Ztest, T-Test, Chisquared, ANOVA, correlation test, Feature Engineering}
-        - Ajay Shenoy: |ooooo|ooooo|
-          - 1  | Intro to Hypothesis Testing
-          - 2  | Z-test
-          - 3  | Z-test II
-          - 4  | T-test
-          - 5  | Chisquared
-          - 6  | ANOVA
-          - 7  | Advanced Hypothesis Testing
-          - 8  | Correlation
-          - 9  | Feat Engg. I (Aditya Jain)
-            - what is features / target
-            - Example of feature engineering: height + weight = bmi -> fitness
-            - Jupyter: loan.csv
-              - dropping ID column
-              - get summaries of numerical columns as well as categorical columns
-              - check the dtype of columns and filter based on dtype
-              - get the number of missing values
-              - univariate analysis
-                - plot distributions
-              - hypothesis testing
-            - BREAK
-            - skewness
-            - kurtosis
-            - binning
-            - chi2-contingency
-            - if income does not have an effect on loan status, combining with loan amount, loan term, it can have an effect
-          - 10 | Feat Engg. II
-      - 5:  |  /  |A+|100%|100%| 65%|oo   | {Product Analytics: Product Metrics, RCA, CRM Analytics, A/B Testing, Guess Estimate, Flight Overbooking}
-      - 6:  |  /  |  |    |  0%|  0%|ooo  | {Common Core Tools: SQL + Excel + Tableau}
-      - 7:  |  /  |  |    | 86%| 80%|oo   | {OOPS, FP, Exception Handling, Modules, Files}
-      - 8:  | 1/10|B | 77%|100%| 89%|oo   | {linear algebra, optimization}
-        - Aditya Jain (main): |xoooo|ooooo|
-          - 1
-            - pattern recognition salary example
-            - y = mx + c
-            - classification
-            - supervised
-            - unsupervised
-            - features vs target / dependent vs independent
-            - best classifier
-            - line is always not sufficient, sometimes we need a curve
-            - overall ML process / steps
-            - BREAK
-            - coordinate geometry basics
-            - y = mx + c
+- [uow/datascience](https://www.youtube.com/watch?v=xUJ170KJIfM&list=PL7T06JEc5PF5Vuz1U7lEEaFPOExDbKVEh&index=7)
+- [scaler](https://www.scaler.com)
+  - modules
+    - N:  |NOTES|GR|EXAM|ASMT|ATTN|RSRCH|
+    - 2:  | 1/16|B+| 80%|100%| 98%|oo   | {numpy, pandas}
+      - main (Nikhil Sanghi): |xoooo|ooooo|ooooo|
+        - 1
+          - pros and cons of numpy
+            - element-wise operation
+            - comparing the times of square by list comprehension and square by element wise operation
+            - heterogenous array not possible
+            - how numpy stores internally -> as contiguous memory
+          - arr.dtype
+          - type conversions in numpy to keep the array homogenous: boolean -> int -> float -> string
+          - np.array(list, dtype="float")
+          - python range vs numpy arange
+    - 3:  | 1/10|A+|100%|100%| 80%|oo   | {probability, combinatorics, stats, distributions, CLT}
+      - Shivam Yadav (main): |ooooo|ooooo|
+      - Ajay Shenoy: |xoooo|ooooo|
+        - 1
+          - importance of probability
+            - mention in JD
+            - amazon button color example -> conditional probability:  purchase | color = orange
+            - next word prediction as conditional probability
+          - terminology
+            - sample space
+            - experiment
+            - outcome
+            - event
+          - set operations
+            - intersection
+            - union
+            - complement
+          - mutually exclusive
+          - collectively exhaustive
+          - BREAK
+          - sachin-ODI (sachin scoring a century good for india or bad for india)
+            - value counts of two columns together -> joint-frequency table / 2-way frequency table
+              - .unstack()
+            - pd.crosstab(index, columns, margin)
+            - conditional probabilities from joint-frequency table
+    - 4:  |  /  |A | 90%|100%| 86%|oo   | {Hypothesis Testing, Ztest, T-Test, Chisquared, ANOVA, correlation test, Feature Engineering}
+      - Ajay Shenoy: |ooooo|ooooo|
+        - 1  | Intro to Hypothesis Testing
+        - 2  | Z-test
+        - 3  | Z-test II
+        - 4  | T-test
+        - 5  | Chisquared
+        - 6  | ANOVA
+        - 7  | Advanced Hypothesis Testing
+        - 8  | Correlation
+        - 9  | Feat Engg. I (Aditya Jain)
+          - what is features / target
+          - Example of feature engineering: height + weight = bmi -> fitness
+          - Jupyter: loan.csv
+            - dropping ID column
+            - get summaries of numerical columns as well as categorical columns
+            - check the dtype of columns and filter based on dtype
+            - get the number of missing values
+            - univariate analysis
+              - plot distributions
+            - hypothesis testing
+          - BREAK
+          - skewness
+          - kurtosis
+          - binning
+          - chi2-contingency
+          - if income does not have an effect on loan status, combining with loan amount, loan term, it can have an effect
+        - 10 | Feat Engg. II
+    - 5:  |  /  |A+|100%|100%| 65%|oo   | {Product Analytics: Product Metrics, RCA, CRM Analytics, A/B Testing, Guess Estimate, Flight Overbooking}
+    - 6:  |  /  |  |    |  0%|  0%|ooo  | {Common Core Tools: SQL + Excel + Tableau}
+    - 7:  |  /  |  |    | 86%| 80%|oo   | {OOPS, FP, Exception Handling, Modules, Files}
+    - 8:  | 1/10|B | 77%|100%| 89%|oo   | {linear algebra, optimization}
+      - Aditya Jain (main): |xoooo|ooooo|
+        - 1
+          - pattern recognition salary example
+          - y = mx + c
+          - classification
+          - supervised
+          - unsupervised
+          - features vs target / dependent vs independent
+          - best classifier
+          - line is always not sufficient, sometimes we need a curve
+          - overall ML process / steps
+          - BREAK
+          - coordinate geometry basics
+          - y = mx + c
+          - generalized equation of line
+          - ML form of generalized equation
+          - multi-class classification
+          - slopes of parallel lines
+          - slopes of perpendicular lines
+          - nD space -> (n-1)D-hyperplane
+          - desmos
+            - y=mx+c
             - generalized equation of line
-            - ML form of generalized equation
-            - multi-class classification
-            - slopes of parallel lines
-            - slopes of perpendicular lines
-            - nD space -> (n-1)D-hyperplane
-            - desmos
-              - y=mx+c
-              - generalized equation of line
-              - perpendicular lines
-            - jupyter
-              - manually change m and c to find the best line
-      - 9:  | 5/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
-        - Aditya Jain (main): |xxxxx|ooooo|o
-          - 1 | Intro to mL
-            - types of plots depending on data types
-            - definitions of ML
-              - Arthur Samuel
-              - Tom Mitchell
-            - BREAK
-            - comparing ML to a child learning
-            - examples of applications of ML
-              - google news clustering
-              - magicbricks
-              - RL
-            - classification of ML
-              - based on tasks
-                - classification
-                - regression
-                - clustering
-                - recommendation
-                - forecasting
-              - based on learning
-                - supervised
-                - unsupervised
-                - reinforcement
-          - 2 | Linear Regression 1
-            - dataset: cars24 introduction
-            - jupyter
-              - cars24 data exploration
-              - encoding
-                - OHE
-                  - curse of dimensionality
-                - label ecnoding
-                - target encoding
-              - scaling
-                - min max scaling
-              - train-test split
-              - linear regression
-                - univariate linear regression
-                  - using sklearn
-                  - model.fit
-                  - model.coef_
-                  - model.intercept_
-                  - model.predict
-                  - model.score
-                  - error
-                    - MAE
-                    - MSE
-                    - R2 score / R-squared / coeff of determination
-          - 3 | Linear Regression 2
-            - R2 score
-              - theoretical range and practical range
-            - min-max scaling
-              - .fit_transform on train
-              - .transform on test
-            - model interpretability
-              - coeffecient or weight
-                - negative, zero, positive
-                  - direction of impact
-                - value
-                  - feature importance
-            - BREAK
-            - Gradient Descent
-              - steps
-              - derivative of loss
-            - Multivariate Linear Regression with gradient descent from scratch
-          - 4 | Linear Regression 3
-            - Convergence of gradient descent with scaled vs non-scaled features
-            - Adjusted R2 score
-            - calculating R2 score using sklearn
-            - BREAK
-            - OLS using statsmodels.api
-            - OLS vs SKlearn (wrong: it should be OLS vs numerical methods)
-            - Assumptions of Linear Regression
-              - Presence of Linearity
-              - Absence of multicollinearity
-                - what is the problem with multicollinearity
-          - 5 | Linear Regression 4
-            - VIF
-            - VIF in code
-              - statsmodels.stats.outliers_influence.variance_inflation_factor
-            - Normality of residuals
-            - BREAK
-            - Residual analysis
-              - use it to remove outliers
-            - Heteroskedasticity
-            - code
-              - how to find normality of residuals
-              - how to find Heteroskedasticity
-            - autocorrelation
-            - varieties of GD
-      - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
-        - Rohit (main):                   |xoooo|ooooo|xo   |
-          - 1  | KNN 1
-            - SMOTE
-              - oversampling
-              - undersampling
-              - linear interpolation
-            - KNN
-              - Fake blinkit casestudy
-              - reducing dimensions using PCA to plot 2d plot
-              - why use KNN when we have logreg
-                - log reg by default does not do multiclass and non-linear classification
-              - Intuition
-            - BREAK
-            - non-parametricity
-            - CASE/blinkit
-              - KNN from scratch
-                - implement SMOTE
-                - standard scaling after train test split to avoid leakage
-                - knn algorithm
-              - confusion matrix using sklearn
-              - classification report using sklearn
-            - assumptions of KNN
-              - Neighborhood is homogenous
-          - 2  | KNN 2
-          - 3  | DT 1
-          - 4  | DT 2
-          - 5  | Bagging and RF
-          - 6  | Boosting 1
-          - 7  | Boosting 2
-          - 8  | Other Ensemble Techniques
-          - 9  | Naive Bayes 1
-          - 10 | Naive Bayes 2
-          - 11 | SVM 1
-            - Spam and Ham
-            - Intuition of SVM
-            - why do we need a large margin
-            - nickname
-              - margin-maximizing classifier
-            - equations of margins of hyperplane
-            - distance between margins
-            - [interactive demo](https://greitemann.dev/svm-demo)
-            - Hard margin SVM
-            - desmos demo
-            - Is hard margin svm practical?
-            - BREAK
-            - Hard Margin SVM
-              - Failure case
-            - Soft Margin SVM
-              - slack variable
-              - total slack
-            - role of hyperparameter C
-            - Hinge loss
-            - Hinge loss with respect to margin of the true side
-          - 12 | SVM 2 [code](https://colab.research.google.com/drive/1OT7QRWm0W6aaE2RV6ikTKfVVevWXrRNb?usp=sharing)
-            - SVM vs SVC
-            - 12m-36m/very very long recap
-              - how is svc different from logistic regression
-            - 36m-/optimization function
-              - primal form
-            - 38m-/information theory
-        - Nikhil Sanghi (VidLib):         |xoooo|ooooo|oo   |
-          - 1
-            - detailed and useless description of blinkit delivery store problem
-            - brief intuition of PCA
-            - code: blinkit data
-              - brief description of data
-              - train, val, test split
-            - KNN intuition
-              - assumption of homegenity
-            - KNN algorithm
-              - hyperparameter tuning
-              - pros and cons
-            - Time complexity of KNN algorithm
-      - 11: | 2/9 |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
-        - Rohit (main):                   |ooooo|oooo |
-          - 1 | PCA | [colab](https://colab.research.google.com/drive/1E_zWvbrptcfVYHcjcJgyP7w9xcHtoBVH?usp=sharing)
-            - CASE/mnist
-              - how black and white images are represented in system
-              - CODE
-                - understanding the data
-            - what is dimensioanlity reduction using a stupid example of taking a picture
-              - introducted the idea of lossless compression
-            - trying to understand dimensionality reduction using diabetes data
-              - weight vs age, which has more variance
-            - properties of principal components
-          - 2 | tSNE
-          - 3 | UMAP
-          - 4 | KMeans
-          - 5 | KMeans++
-          - 6 | GMM
-          - 7 | Hierarchical Clustering
-          - 8 | DBSCAN
-          - 9 | Anomaly Detection
-        - Nikhil Sanghi (VidLib)          |xxooo|oooo |
-          - 1  | KMeans
-            - what is unsupervised
-            - CASE/nykaa
-              - CODE
-              - looking at the data
-            - what is clustering: intuition
-              - cricket example
-            - distances
-              - inter cluster
-                - mean
-                - min
-                - max
-              - intra cluster
-                - dist between mean points
-                - dist between all points
-                - dist between farthest points
-              - BREAK
-              - DUNN Index
-              - KMeans not even discussed in this class
-              - [DEMO](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/)
-          - 2  | Kmeans++
-            - DUNN Index
-              - range
-            - KMeans process
-              - Demo
-              - Algorithm
-            - LLoyod's Algorithm
-            - WCSS
-            - Silhouette score
-            - BREAK
-            - Elbow method
+            - perpendicular lines
+          - jupyter
+            - manually change m and c to find the best line
+    - 9:  | 5/10|B-| 95%| 66%| 88%|oo   | {linear regression, logistic regression}
+      - Aditya Jain (main): |xxxxx|ooooo|o
+        - 1 | Intro to mL
+          - types of plots depending on data types
+          - definitions of ML
+            - Arthur Samuel
+            - Tom Mitchell
+          - BREAK
+          - comparing ML to a child learning
+          - examples of applications of ML
+            - google news clustering
+            - magicbricks
+            - RL
+          - classification of ML
+            - based on tasks
+              - classification
+              - regression
+              - clustering
+              - recommendation
+              - forecasting
+            - based on learning
+              - supervised
+              - unsupervised
+              - reinforcement
+        - 2 | Linear Regression 1
+          - dataset: cars24 introduction
+          - jupyter
+            - cars24 data exploration
+            - encoding
+              - OHE
+                - curse of dimensionality
+              - label ecnoding
+              - target encoding
+            - scaling
+              - min max scaling
+            - train-test split
+            - linear regression
+              - univariate linear regression
+                - using sklearn
+                - model.fit
+                - model.coef_
+                - model.intercept_
+                - model.predict
+                - model.score
+                - error
+                  - MAE
+                  - MSE
+                  - R2 score / R-squared / coeff of determination
+        - 3 | Linear Regression 2
+          - R2 score
+            - theoretical range and practical range
+          - min-max scaling
+            - .fit_transform on train
+            - .transform on test
+          - model interpretability
+            - coeffecient or weight
+              - negative, zero, positive
+                - direction of impact
+              - value
+                - feature importance
+          - BREAK
+          - Gradient Descent
+            - steps
+            - derivative of loss
+          - Multivariate Linear Regression with gradient descent from scratch
+        - 4 | Linear Regression 3
+          - Convergence of gradient descent with scaled vs non-scaled features
+          - Adjusted R2 score
+          - calculating R2 score using sklearn
+          - BREAK
+          - OLS using statsmodels.api
+          - OLS vs SKlearn (wrong: it should be OLS vs numerical methods)
+          - Assumptions of Linear Regression
+            - Presence of Linearity
+            - Absence of multicollinearity
+              - what is the problem with multicollinearity
+        - 5 | Linear Regression 4
+          - VIF
+          - VIF in code
+            - statsmodels.stats.outliers_influence.variance_inflation_factor
+          - Normality of residuals
+          - BREAK
+          - Residual analysis
+            - use it to remove outliers
+          - Heteroskedasticity
+          - code
+            - how to find normality of residuals
+            - how to find Heteroskedasticity
+          - autocorrelation
+          - varieties of GD
+    - 10: | 1/12|F | 83%| 10%| 38%|oo   | {KNN, DT, Ensnemble, SVM}
+      - Rohit (main):                   |xoooo|ooooo|xo   |
+        - 1  | KNN 1
+          - SMOTE
+            - oversampling
+            - undersampling
+            - linear interpolation
+          - KNN
+            - Fake blinkit casestudy
+            - reducing dimensions using PCA to plot 2d plot
+            - why use KNN when we have logreg
+              - log reg by default does not do multiclass and non-linear classification
+            - Intuition
+          - BREAK
+          - non-parametricity
+          - CASE/blinkit
+            - KNN from scratch
+              - implement SMOTE
+              - standard scaling after train test split to avoid leakage
+              - knn algorithm
+            - confusion matrix using sklearn
+            - classification report using sklearn
+          - assumptions of KNN
+            - Neighborhood is homogenous
+        - 2  | KNN 2
+        - 3  | DT 1
+        - 4  | DT 2
+        - 5  | Bagging and RF
+        - 6  | Boosting 1
+        - 7  | Boosting 2
+        - 8  | Other Ensemble Techniques
+        - 9  | Naive Bayes 1
+        - 10 | Naive Bayes 2
+        - 11 | SVM 1
+          - Spam and Ham
+          - Intuition of SVM
+          - why do we need a large margin
+          - nickname
+            - margin-maximizing classifier
+          - equations of margins of hyperplane
+          - distance between margins
+          - [interactive demo](https://greitemann.dev/svm-demo)
+          - Hard margin SVM
+          - desmos demo
+          - Is hard margin svm practical?
+          - BREAK
+          - Hard Margin SVM
+            - Failure case
+          - Soft Margin SVM
+            - slack variable
+            - total slack
+          - role of hyperparameter C
+          - Hinge loss
+          - Hinge loss with respect to margin of the true side
+        - 12 | SVM 2 [code](https://colab.research.google.com/drive/1OT7QRWm0W6aaE2RV6ikTKfVVevWXrRNb?usp=sharing)
+          - SVM vs SVC
+          - 12m-36m/very very long recap
+            - how is svc different from logistic regression
+          - 36m-/optimization function
+            - primal form
+          - 38m-/information theory
+      - Nikhil Sanghi (VidLib):  |xoooo|ooooo|oo   |
+        - 1  | KNN 1
+          - detailed and useless description of blinkit delivery store problem
+          - brief intuition of PCA
+          - CODE: blinkit data
+            - brief description of data
+            - train, val, test split
+          - KNN intuition
+            - assumption of homegenity
+          - KNN algorithm
+            - hyperparameter tuning
+            - pros and cons
+          - Time complexity of KNN algorithm
+          - END
+        - 2  | KNN 2:
+          - CODE:
+            - KNN from scratch
+        - 3  | DT 1
+        - 4  | DT 2
+        - 5  | Bagging and RF
+        - 6  | Boosting 1
+        - 7  | Boosting 2
+        - 8  | Other Ensemble Techniques
+        - 9  | Naive Bayes 1
+        - 10 | Naive Bayes 2
+        - 11 | SVM 1
+        - 12 | SVM 2
+    - 11: | 2/9 |  |    | 13%| 10%|oo   | {PCA, tSNE, UMAP, KMeans, Kmeans++, GMM, Hierarchical Clustering, DBSCAN, Anomaly Detection}
+      - Rohit (main):                   |ooooo|oooo |
+        - 1 | PCA | [colab](https://colab.research.google.com/drive/1E_zWvbrptcfVYHcjcJgyP7w9xcHtoBVH?usp=sharing)
+          - CASE/mnist
+            - how black and white images are represented in system
             - CODE
-          - 3  | Hierarchical Clustering
-          - 4  | GMM
-          - 5  | Anomaly / Outlier / Novelty I
-          - 6  | Anomaly / Outlier / Novelty II
-          - 7  | T-SNE I
-          - 8  | PCA
-          - 9  | T-SNE II
-          - 10 | UMAP
-      - 12: |  /  |  |    | 22%|  9%|ooo  | {Time Series, Recommender Systems}
-      - 13: | 1/12|B | 77%|100%|100%|oooo | {MLops: Git, Streamlit, Flask, Docker, AWS, CI/CD, MLFlow, System Design, AWS SageMaker, Apache Spark}
-        - Rohit (main): |xoooo|ooooo|oo   |
-          - 1
-            - mlops vs devops
-              - what is devops (horrible explanation)
-            - git
-              - why we require version control
-              - terminlolgy
-                - repository
-                - commit
-            - distributed VCS vs centralized VCS
-            - github desktop
+              - understanding the data
+          - what is dimensioanlity reduction using a stupid example of taking a picture
+            - introducted the idea of lossless compression
+          - trying to understand dimensionality reduction using diabetes data
+            - weight vs age, which has more variance
+          - properties of principal components
+        - 2 | tSNE
+        - 3 | UMAP
+        - 4 | KMeans
+        - 5 | KMeans++
+        - 6 | GMM
+        - 7 | Hierarchical Clustering
+        - 8 | DBSCAN
+        - 9 | Anomaly Detection
+      - Nikhil Sanghi (VidLib)          |xxooo|oooo |
+        - 1  | KMeans
+          - what is unsupervised
+          - CASE/nykaa
+            - CODE
+            - looking at the data
+          - what is clustering: intuition
+            - cricket example
+          - distances
+            - inter cluster
+              - mean
+              - min
+              - max
+            - intra cluster
+              - dist between mean points
+              - dist between all points
+              - dist between farthest points
+            - BREAK
+            - DUNN Index
+            - KMeans not even discussed in this class
+            - [DEMO](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/)
+        - 2  | Kmeans++
+          - DUNN Index
+            - range
+          - KMeans process
+            - Demo
+            - Algorithm
+          - LLoyod's Algorithm
+          - WCSS
+          - Silhouette score
+          - BREAK
+          - Elbow method
+          - CODE
+        - 3  | Hierarchical Clustering
+        - 4  | GMM
+        - 5  | Anomaly / Outlier / Novelty I
+        - 6  | Anomaly / Outlier / Novelty II
+        - 7  | T-SNE I
+        - 8  | PCA
+        - 9  | T-SNE II
+        - 10 | UMAP
+    - 12: |  /10|  |    | 22%|  9%|ooo  | {Time Series, Recommender Systems}
+      - Rohit (main):                   |ooooo|oooo |
+        - 1  | TS1
+        - 2  | TS2
+        - 3  | TS3
+        - 4  | TS4
+        - 5  | TS5
+        - 6  | RS1 [demo](https://colab.research.google.com/drive/1ngATQYi_CbNsPu3PGT4_oZdvcOeb87o2?usp=sharing)
+          - START/9:30
+          - MBA
+            - Quanity and Order not important
+            - frequent itemsets
+          - CODE
+            - preparing the data for MBA
+          - how to find frequent itemsets
+            - co-occurence
+        - 7  | RS2
+        - 8  | RS3
+        - 9  | RS4
+        - 10 | RS5
+    - 13: | 1/12|B | 77%|100%|100%|oooo | {MLops: Git, Streamlit, Flask, Docker, AWS, CI/CD, MLFlow, System Design, AWS SageMaker, Apache Spark}
+      - Rohit (main): |xoooo|ooooo|oo   |
+        - 1
+          - mlops vs devops
+            - what is devops (horrible explanation)
+          - git
+            - why we require version control
+            - terminlolgy
+              - repository
               - commit
-              - checkout
-              - push
-              - pull
-            - BREAK
-            - terminology
-              - repository: tracked folder
-                - local
-                - remote
-              - commit
-              - push
-              - pull
-              - clone
-            - how to create a repository
-            - always pull before you push
-            - branches
-            - merging
-              - pull request
-              - merge conflicts
-            - publish branch
-            - forking
-      - 14: |-----|--|----|----|----|-----| {Portfolio Project}
-      - 15: | 1/12|F | 50%| 46%| 92%|ooooo| {neural networks}
-        - Satya Patnaik (main): |xoooo|ooooo|oo   |
-          - 1
-            - spiral data
-              - properties of spiral dataset: multiclass + non-linear
-              - ML algorithms and how they would handle multiclass + non-linear + inference time + automatic feature engineering + parallelizable + unstructured data
-                - logreg
-                - KNN
-                - DT
-                - SVM
-              - evolve logreg to neural network
-              - tensorflow dashboard demo
-            - applications of Neural Networks
-              - compression / encryption -> autoencoders
-              - magic eraser in google photos / image segmentation
-              - autocomplete
-            - BREAK
-            - inspriation from biological neuron
-            - mathematical representation of neuron
-            - logreg neuron
-            - SVM neuron
-            - perceptron neuron
-            - Brief history of neural networks in one chart -> 2 AI winters
-            - Performance of classical Algorithms vs Small NN, Medium NN, Deep NN with increasing data chart
-            - Meaning of Deep NN
-      - 16: |     |  |    |    |    |oo   | {Computer Vision}
-      - 17: |     |  |    |    |    |oo   | {Natural Language Processing}
-      - 18: |-1/27|--|----|----|----|-----| {system design, data engineering}
-        - Shivank Agarwal (archived): |xoooo|ooooo|ooooo|ooooo|ooooo|oo   |
-          - 1
-            - 26:00 - using example of facebook to talk about data flow
-            - keeping data and code in separate machines (awfully long time spent on such a simple concept)
-            - vertical scaling vs horizontal scaling pros and cons of both
-            - load balancer
-              - private vs public IP
-              - `nslookup google.com`
-            - youtube example: read vs write requests
-              - master slave relationship
-            - cache
-            - BREAK
-            - CDN servers (akamai): works just like a cache
-            - system design in ML
-              - interview topics
-                - functional requirements
-                - non-functional requirements
-                - mathematical estimates
-                - data flow / API design
-                - HLD
-                - Detailed Design
-      - 19: |-----|--|----|----|----|-----| {GenAI, LLM}
-      - 20: |-----|--|----|----|----|-----| {Py1}
-      - 21: |-----|--|----|----|----|-----| {Py2}
-      - 22: |-----|--|----|----|----|-----| {SQL}
-      - 23: |-----|--|----|----|----|-----| {Tableau, Excel}
-      - 24: |-----|--|----|----|----|-----| {Advanced DSA 1}
-      - 25: |-----|--|----|----|----|-----| {Advanced DSA 2}
-      - 26: |-----|--|----|----|----|-----| {Advanced DSA 3}
-      - 27: |-----|--|----|----|----|-----| {Advanced DSA 4}
-      - 28: |-----|--|----|----|----|-----| {Domain Analytics}
-  - [book/diesenroth](~/gdrive/archive/books/cs-math-dsml/Maths4ML-Diesenroth.pdf)
+          - distributed VCS vs centralized VCS
+          - github desktop
+            - commit
+            - checkout
+            - push
+            - pull
+          - BREAK
+          - terminology
+            - repository: tracked folder
+              - local
+              - remote
+            - commit
+            - push
+            - pull
+            - clone
+          - how to create a repository
+          - always pull before you push
+          - branches
+          - merging
+            - pull request
+            - merge conflicts
+          - publish branch
+          - forking
+    - 14: |-----|--|----|----|----|-----| {Portfolio Project}
+    - 15: | 1/12|F | 50%| 46%| 92%|ooooo| {neural networks}
+      - Satya Patnaik (main): |xoooo|ooooo|oo   |
+        - 1
+          - spiral data
+            - properties of spiral dataset: multiclass + non-linear
+            - ML algorithms and how they would handle multiclass + non-linear + inference time + automatic feature engineering + parallelizable + unstructured data
+              - logreg
+              - KNN
+              - DT
+              - SVM
+            - evolve logreg to neural network
+            - tensorflow dashboard demo
+          - applications of Neural Networks
+            - compression / encryption -> autoencoders
+            - magic eraser in google photos / image segmentation
+            - autocomplete
+          - BREAK
+          - inspriation from biological neuron
+          - mathematical representation of neuron
+          - logreg neuron
+          - SVM neuron
+          - perceptron neuron
+          - Brief history of neural networks in one chart -> 2 AI winters
+          - Performance of classical Algorithms vs Small NN, Medium NN, Deep NN with increasing data chart
+          - Meaning of Deep NN
+    - 16: |     |  |    |    |    |oo   | {Computer Vision}
+    - 17: |     |  |    |    |    |oo   | {Natural Language Processing}
+      - Srikanth Verma (VIDLIB):
+        - 1  | text Processing
+          - applications of nlp
+          - problems in nlp
+          - 30min/terminology:
+            - parts of language:
+              - phonemes
+              - morphemes
+              - syntax
+              - context
+        - 2  | text representation
+        - 3  | word embedding
+        - 4  | language modeling
+        - 5  | topic modeling
+        - 6  | RNN
+        - 7  | LSTM
+        - 8  | NER
+        - 9  | Attention
+        - 10 | Transformers
+        - 11 | BERT 1
+        - 12 | BERT 2
+    - 18: |-1/27|--|----|----|----|-----| {system design, data engineering}
+      - Shivank Agarwal (archived): |xoooo|ooooo|ooooo|ooooo|ooooo|oo   |
+        - 1
+          - 26:00 - using example of facebook to talk about data flow
+          - keeping data and code in separate machines (awfully long time spent on such a simple concept)
+          - vertical scaling vs horizontal scaling pros and cons of both
+          - load balancer
+            - private vs public IP
+            - `nslookup google.com`
+          - youtube example: read vs write requests
+            - master slave relationship
+          - cache
+          - BREAK
+          - CDN servers (akamai): works just like a cache
+          - system design in ML
+            - interview topics
+              - functional requirements
+              - non-functional requirements
+              - mathematical estimates
+              - data flow / API design
+              - HLD
+              - Detailed Design
+    - 19: |-----|--|----|----|----|-----| {GenAI, LLM}
+    - 20: |-----|--|----|----|----|-----| {Py1}
+    - 21: |-----|--|----|----|----|-----| {Py2}
+    - 22: |-----|--|----|----|----|-----| {SQL}
+    - 23: |-----|--|----|----|----|-----| {Tableau, Excel}
+    - 24: |-----|--|----|----|----|-----| {Advanced DSA 1}
+    - 25: |-----|--|----|----|----|-----| {Advanced DSA 2}
+    - 26: |-----|--|----|----|----|-----| {Advanced DSA 3}
+    - 27: |-----|--|----|----|----|-----| {Advanced DSA 4}
+    - 28: |-----|--|----|----|----|-----| {Domain Analytics}
+- [book/diesenroth](~/gdrive/archive/books/cs-math-dsml/Maths4ML-Diesenroth.pdf)

@@ -1,0 +1,2 @@
+- [book/thompson](~/gdrive/archive/books/cs-math-dsml/HaskellCraftFP-Thompson.pdf)
+- [tutorial(2.5h)](https://www.youtube.com/watch?v=TklkNLihQ_A)
